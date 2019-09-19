@@ -30,7 +30,7 @@
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.html"><img src="images/w4.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="{{$url->getSingle()}}"><img src="images/w4.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -57,7 +57,7 @@
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.html"><img src="images/ep3.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="{{$url->getSingle()}}"><img src="images/ep3.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -85,7 +85,7 @@
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.html"><img src="images/w2.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="{{$url->getSingle()}}"><img src="images/w2.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -113,7 +113,7 @@
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.html"><img src="images/w1.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="{{$url->getSingle()}}"><img src="images/w1.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           

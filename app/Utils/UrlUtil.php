@@ -1,31 +1,38 @@
 <?php
-
 namespace App\Utils;
 
 class UrlUtil {
     public static function home() {
         return "/";
     }
-    public static function contactUs() {
-        return "/contact-us";
+    public static function checkout() {
+        return "/checkout";
     }
-    public static function about() {
-        return "/about";
+    public static function codes() {
+        return "/codes";
     }
-    public static function services() {
-        return "/services";
+    public static function contact() {
+        return "/contact";
     }
-    public static function news() {
-        return "/news";
+    public static function electronic() {
+        return "/electronic";
     }
-    public static function error404() {
-        return "/error-404";
+    public static function mens() {
+        return "/mens";
     }
-    
+    public static function single() {
+        return "/single";
+    }
+    public static function womens() {
+        return "/womens";
+    }
 
-    public function getHome() { return UrlUtil::home(); }
-    public function getContactUs() { return UrlUtil::contactUs(); }
-    public function getAbout() { return UrlUtil::about(); }
-    public function getServices() { return UrlUtil::services(); }
-    public function getNews() { return UrlUtil::news(); }
+    public function getHome() {return UrlUtil :: home(); }
+    public function getCheckOut() {return UrlUtil :: checkout(); }
+    public function getCodes() {return UrlUtil :: codes(); }
+    public function getContact() {return UrlUtil :: contact(); }
+    public function getElectronic() {return UrlUtil :: electronic(); }
+    public function getSingle() {return UrlUtil :: single(); }
+    public function getWomens() {return UrlUtil :: womens(); }
+
 }

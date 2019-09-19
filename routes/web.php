@@ -1,16 +1,15 @@
 <?php
 
+use App\Utils\UrlUtil;
 
-
-Route::get('/', 'Pages\\NonAuths\\HomeController@index');
-Route::get('/codes', 'Pages\\NonAuths\CodesController@index');
-Route::get('/checkout', 'Pages\\NonAuths\\CheckOutController@index');
-Route::get('/electronic', 'Pages\\NonAuths\\ElectronicController@index');
-Route::get('/mens', 'Pages\\NonAuths\\MensController@index');
-Route::get('/single', 'Pages\\NonAuths\\SingleController@index');
-Route::get('/womens', 'Pages\\NonAuths\\WomensController@index');
-
-Route::get('/contact', 'Pages\\NonAuths\\ContactController@index');
+Route::get(UrlUtil::home(), 'Pages\\NonAuths\\HomeController@index');
+Route::get(UrlUtil::codes(), 'Pages\\NonAuths\CodesController@index');
+Route::get(UrlUtil::checkout(), 'Pages\\NonAuths\\CheckOutController@index');
+Route::get(UrlUtil::electronic(), 'Pages\\NonAuths\\ElectronicController@index');
+Route::get(UrlUtil::mens(), 'Pages\\NonAuths\\MensController@index');
+Route::get(UrlUtil::single(), 'Pages\\NonAuths\\SingleController@index');
+Route::get(UrlUtil::womens(), 'Pages\\NonAuths\\WomensController@index');
+Route::get(UrlUtil::contact(), 'Pages\\NonAuths\\ContactController@index');
 // Route::get('/contact', 'Pages\\NonAuths\\ContactController@index');
 // Route::get('/contact', function(){
 //     return view('contact');
