@@ -12,6 +12,6 @@ class ContactUsController extends NonAuthController
     }
     //
     public function index () {
-        return $this->view("contact-us");
+        return $this->view("contact");
     }
 }

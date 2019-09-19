@@ -12,6 +12,6 @@ class HomeController extends NonAuthController
     }
     //
     public function index () {
-        return $this->view("home");
+        return $this->view("index");
     }
 }

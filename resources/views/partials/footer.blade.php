@@ -1,109 +1,64 @@
-  <!-- Footer section -->
-  <div class="copyright_wrap copyright_style_socials scheme_orange">
-                    <div class="copyright_wrap_inner">
-                        <div class="content_wrap">
-                            <div class="contact_field">
-                                <div class="contact_address">
-                                    <span class="contact_icon icon-location"></span>
-                                    <span class="contact_label contact_address_1">123 QuickSale Street <em>Chicago, IL 60606</em></span>
-                                </div>
-                                <div class="contact_phone">
-                                    <span class="contact_icon icon-phone"></span>
-                                    <span class="contact_label contact_phone_text">123-456-7890</span>
-                                </div>
-                                <div class="cL"></div>
-                            </div>
-                            <div class="copyright_text">
-                                <p>
-                                <span class="textDark">Axiom</span> 
-                                © 2015 All Rights Reserved 
-                                <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-                                </p>
-                            </div>
-                            <div class="cL"></div>
-                            <div class="sc_socials sc_socials_type_icons sc_socials_shape_square sc_socials_size_tiny">
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_facebook">
-                                        <span class="icon-facebook"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_twitter">
-                                        <span class="icon-twitter"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_instagramm">
-                                        <span class="icon-instagramm"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_linkedin">
-                                        <span class="icon-linkedin"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_gplus">
-                                        <span class="icon-gplus"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="cL"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Footer section -->  <!-- Footer section -->
-                <div class="copyright_wrap copyright_style_socials scheme_orange">
-                    <div class="copyright_wrap_inner">
-                        <div class="content_wrap">
-                            <div class="contact_field">
-                                <div class="contact_address">
-                                    <span class="contact_icon icon-location"></span>
-                                    <span class="contact_label contact_address_1">123 QuickSale Street <em>Chicago, IL 60606</em></span>
-                                </div>
-                                <div class="contact_phone">
-                                    <span class="contact_icon icon-phone"></span>
-                                    <span class="contact_label contact_phone_text">123-456-7890</span>
-                                </div>
-                                <div class="cL"></div>
-                            </div>
-                            <div class="copyright_text">
-                                <p>
-                                <span class="textDark">Axiom</span> 
-                                © 2015 All Rights Reserved 
-                                <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-                                </p>
-                            </div>
-                            <div class="cL"></div>
-                            <div class="sc_socials sc_socials_type_icons sc_socials_shape_square sc_socials_size_tiny">
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_facebook">
-                                        <span class="icon-facebook"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_twitter">
-                                        <span class="icon-twitter"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_instagramm">
-                                        <span class="icon-instagramm"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_linkedin">
-                                        <span class="icon-linkedin"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_gplus">
-                                        <span class="icon-gplus"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="cL"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Footer section -->
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 footer-left">
+			<h2><a href="index.html"><img src="images/logo3.jpg" alt=" " /></a></h2>
+			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
+			sit amet, consectetur, adipisci velit, sed quia non 
+			numquam eius modi tempora incidunt ut labore 
+			et dolore magnam aliquam quaerat voluptatem.</p>
+		</div>
+		<div class="col-md-9 footer-right">
+			<div class="col-sm-6 newsleft">
+				<h3>SIGN UP FOR NEWSLETTER !</h3>
+			</div>
+			<div class="col-sm-6 newsright">
+				<form>
+					<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="clearfix"></div>
+			<div class="sign-grds">
+				<div class="col-md-4 sign-gd">
+					<h4>Information</h4>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="mens.html">Men's Wear</a></li>
+						<li><a href="womens.html">Women's Wear</a></li>
+						<li><a href="electronics.html">Electronics</a></li>
+						<li><a href="codes.html">Short Codes</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-md-4 sign-gd-two">
+					<h4>Store Information</h4>
+					<ul>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Address : 1234k Avenue, 4th block, <span>Newyork City.</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email : <a href="mailto:info@example.com">info@example.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone : +1234 567 567</li>
+					</ul>
+				</div>
+				<div class="col-md-4 sign-gd flickr-post">
+					<h4>Flickr Posts</h4>
+					<ul>
+						<li><a href="single.html"><img src="images/b15.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="images/b16.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="images/b17.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="images/b18.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="images/b15.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="images/b16.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="images/b17.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="images/b18.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="images/b15.jpg" alt=" " class="img-responsive" /></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<p class="copy-right">&copy 2016 Smart Shop. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+	</div>
+</div>
+<!-- //footer -->
