@@ -22,28 +22,28 @@
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="row">
 									<div class="col-sm-6 multi-gd-img1 multi-gd-text ">
-										<a href="mens.html"><img src="images/woo1.jpg" alt=" "/></a>
+										<a href="{{$url->getMens()}}"><img src="images/woo1.jpg" alt=" "/></a>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="mens.html">Clothing</a></li>
-											<li><a href="mens.html">Wallets</a></li>
-											<li><a href="mens.html">Footwear</a></li>
-											<li><a href="mens.html">Watches</a></li>
-											<li><a href="mens.html">Accessories</a></li>
-											<li><a href="mens.html">Bags</a></li>
-											<li><a href="mens.html">Caps & Hats</a></li>
+											<li><a href="{{$url->getMens()}}">Clothing</a></li>
+											<li><a href="{{$url->getMens()}}">Wallets</a></li>
+											<li><a href="{{$url->getMens()}}">Footwear</a></li>
+											<li><a href="{{$url->getMens()}}">Watches</a></li>
+											<li><a href="{{$url->getMens()}}">Accessories</a></li>
+											<li><a href="{{$url->getMens()}}">Bags</a></li>
+											<li><a href="{{$url->getMens()}}">Caps & Hats</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="mens.html">Jewellery</a></li>
-											<li><a href="mens.html">Sunglasses</a></li>
-											<li><a href="mens.html">Perfumes</a></li>
-											<li><a href="mens.html">Beauty</a></li>
-											<li><a href="mens.html">Shirts</a></li>
-											<li><a href="mens.html">Sunglasses</a></li>
-											<li><a href="mens.html">Swimwear</a></li>
+											<li><a href="{{$url->getMens()}}">Jewellery</a></li>
+											<li><a href="{{$url->getMens()}}">Sunglasses</a></li>
+											<li><a href="{{$url->getMens()}}">Perfumes</a></li>
+											<li><a href="{{$url->getMens()}}">Beauty</a></li>
+											<li><a href="{{$url->getMens()}}">Shirts</a></li>
+											<li><a href="{{$url->getMens()}}">Sunglasses</a></li>
+											<li><a href="{{$url->getMens()}}">Swimwear</a></li>
 										</ul>
 									</div>
 									<div class="clearfix"></div>
@@ -56,35 +56,35 @@
 								<div class="row">
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="womens.html">Clothing</a></li>
-											<li><a href="womens.html">Wallets</a></li>
-											<li><a href="womens.html">Footwear</a></li>
-											<li><a href="womens.html">Watches</a></li>
-											<li><a href="womens.html">Accessories</a></li>
-											<li><a href="womens.html">Bags</a></li>
-											<li><a href="womens.html">Caps & Hats</a></li>
+											<li><a href="{{$url->getMens()}}">Clothing</a></li>
+											<li><a href="{{$url->getMens()}}">Wallets</a></li>
+											<li><a href="{{$url->getMens()}}">Footwear</a></li>
+											<li><a href="{{$url->getMens()}}">Watches</a></li>
+											<li><a href="{{$url->getMens()}}">Accessories</a></li>
+											<li><a href="{{$url->getMens()}}">Bags</a></li>
+											<li><a href="{{$url->getMens()}}">Caps & Hats</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="womens.html">Jewellery</a></li>
-											<li><a href="womens.html">Sunglasses</a></li>
-											<li><a href="womens.html">Perfumes</a></li>
-											<li><a href="womens.html">Beauty</a></li>
-											<li><a href="womens.html">Shirts</a></li>
-											<li><a href="womens.html">Sunglasses</a></li>
-											<li><a href="womens.html">Swimwear</a></li>
+											<li><a href="{{$url->getMens()}}">Jewellery</a></li>
+											<li><a href="{{$url->getMens()}}">Sunglasses</a></li>
+											<li><a href="{{$url->getMens()}}">Perfumes</a></li>
+											<li><a href="{{$url->getMens()}}">Beauty</a></li>
+											<li><a href="{{$url->getMens()}}">Shirts</a></li>
+											<li><a href="{{$url->getMens()}}">Sunglasses</a></li>
+											<li><a href="{{$url->getMens()}}">Swimwear</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-6 multi-gd-img multi-gd-text ">
-										<a href="womens.html"><img src="images/woo.jpg" alt=" "/></a>
+										<a href="{{$url->getMens()}}"><img src="images/woo.jpg" alt=" "/></a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
 							</ul>
 					</li>
 					<li class=" menu__item"><a class="menu__link" href="{{$url->getElectronic()}}">Electronics</a></li>
-					<li class=" menu__item"><a class="menu__link" href="codes.html">Short Codes</a></li>
+					<li class=" menu__item"><a class="menu__link" href="{{$url->getCodes()}}">Short Codes</a></li>
 					<li class=" menu__item"><a class="menu__link" href="{{$url->getContact()}}">contact</a></li>
 				  </ul>
 				</div>
@@ -93,7 +93,7 @@
 		</div>
 		<div class="top_nav_right">
 			<div class="cart box_1">
-						<a href="checkout.html">
+						<a href="{{$url->getCheckOut()}}">
 							<h3> <div class="total">
 								<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
 								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>

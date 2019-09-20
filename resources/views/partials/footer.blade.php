@@ -24,10 +24,10 @@
 					<h4>Information</h4>
 					<ul>
 						<li><a href="{{$url->getHome()}}">Home</a></li>
-						<li><a href="mens.html">Men's Wear</a></li>
-						<li><a href="womens.html">Women's Wear</a></li>
+						<li><a href="{{$url->getMens()}}">Men's Wear</a></li>
+						<li><a href="{{$url->getWomens()}}">Women's Wear</a></li>
 						<li><a href="{{$url->getElectronic()}}">Electronics</a></li>
-						<li><a href="codes.html">Short Codes</a></li>
+						<li><a href="{{$url->getCodes()}}">Short Codes</a></li>
 						<li><a href="{{$url->getContact()}}">Contact</a></li>
 					</ul>
 				</div>

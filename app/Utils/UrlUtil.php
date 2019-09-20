@@ -34,5 +34,7 @@ class UrlUtil {
     public function getElectronic() {return UrlUtil :: electronic(); }
     public function getSingle() {return UrlUtil :: single(); }
     public function getWomens() {return UrlUtil :: womens(); }
+    public function getMens() {return UrlUtil :: mens(); }
+
 
 }
