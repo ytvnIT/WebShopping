@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Utils\UrlUtil;
 
 Route::get('/', 'Pages\\NonAuths\\HomeController@index');
 Route::get('/codes', 'Pages\\NonAuths\CodesController@index');
