@@ -75,14 +75,14 @@
 									<img src="images/ph1.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Apple Iphone 6</a></h4>
+									<h4><a href="{{$url->getElectronic()}}">Apple Iphone 6</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$500.99</span>
 										<del>$700.71</del>
@@ -98,14 +98,14 @@
 									<img src="images/ph3.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Apple Iphone 6s</a></h4>
+									<h4><a href="{{$url->getElectronic()}}">Apple Iphone 6s</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$799.99</span>
 										<del>$999.71</del>
@@ -121,14 +121,14 @@
 									<img src="images/ph2.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Apple Iphone 6</a></h4>
+									<h4><a href="{{$url->getElectronic()}}">Apple Iphone 6</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$180.99</span>
 										<del>$250.71</del>
@@ -144,14 +144,14 @@
 									<img src="images/ph4.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Apple Iphone 6s</a></h4>
+									<h4><a href="{{$url->getElectronic()}}">Apple Iphone 6s</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$179.99</span>
 										<del>$200.71</del>
@@ -167,14 +167,14 @@
 									<img src="images/ep1.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">Combo Pack</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Watches</a></h4>
+									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$109.99</span>
 										<del>$150.71</del>
@@ -190,14 +190,14 @@
 									<img src="images/ep2.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Watches</a></h4>
+									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$129.99</span>
 										<del>$150.71</del>
@@ -213,14 +213,14 @@
 									<img src="images/ep3.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Watches</a></h4>
+									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$149.99</span>
 										<del>$180.71</del>
@@ -236,14 +236,14 @@
 									<img src="images/ep4.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href={{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Watches</a></h4>
+									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$119.99</span>
 										<del>$150.71</del>
@@ -259,14 +259,14 @@
 									<img src="images/ph1.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Apple Iphone 6</a></h4>
+									<h4><a href="{$url->getElectronic()}}">Apple Iphone 6</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$500.99</span>
 										<del>$700.71</del>
@@ -282,14 +282,14 @@
 									<img src="images/ph3.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Apple Iphone 6s</a></h4>
+									<h4><a href="{{$url->getElectronic()}}">Apple Iphone 6s</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$799.99</span>
 										<del>$999.71</del>
@@ -305,14 +305,14 @@
 									<img src="images/ep4.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Watches</a></h4>
+									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$119.99</span>
 										<del>$150.71</del>
@@ -328,14 +328,14 @@
 									<img src="images/ep1.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getElectronic()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">50% Off</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Watches</a></h4>
+									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$109.99</span>
 										<del>$150.71</del>

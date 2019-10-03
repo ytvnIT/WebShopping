@@ -39,32 +39,32 @@
 						<ul>
 							<li><input type="checkbox" id="item-0-0" /><label for="item-0-0">Ethinic Wear</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Caps</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
-									<li><a href="mens.html">Trousers</a></li>
+									<li><a href="{{$url->getMens()}}">Shirts</a></li>
+									<li><a href="{{$url->getMens()}}">Caps</a></li>
+									<li><a href="{{$url->getMens()}}">Shoes</a></li>
+									<li><a href="{{$url->getMens()}}">Pants</a></li>
+									<li><a href="{{$url->getMens()}}">SunGlasses</a></li>
+									<li><a href="{{$url->getMens()}}">Trousers</a></li>
 								</ul>
 							</li>
 							<li><input type="checkbox"  id="item-0-1" /><label for="item-0-1">Party Wear</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Caps</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
-									<li><a href="mens.html">Trousers</a></li>
+									<li><a href="{{$url->getMens()}}">Shirts</a></li>
+									<li><a href="{{$url->getMens()}}">Caps</a></li>
+									<li><a href="{{$url->getMens()}}">Shoes</a></li>
+									<li><a href="{{$url->getMens()}}">Pants</a></li>
+									<li><a href="{{$url->getMens()}}">SunGlasses</a></li>
+									<li><a href="{{$url->getMens()}}">Trousers</a></li>
 								</ul>
 							</li>
 							<li><input type="checkbox"  id="item-0-2" /><label for="item-0-2">Casual Wear</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Caps</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
-									<li><a href="mens.html">Trousers</a></li>
+									<li><a href="{{$url->getMens()}}">Shirts</a></li>
+									<li><a href="{{$url->getMens()}}">Caps</a></li>
+									<li><a href="{{$url->getMens()}}">Shoes</a></li>
+									<li><a href="{{$url->getMens()}}">Pants</a></li>
+									<li><a href="{{$url->getMens()}}">SunGlasses</a></li>
+									<li><a href="{{$url->getMens()}}">Trousers</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -73,10 +73,10 @@
 						<ul>
 							<li><input type="checkbox" checked="checked" id="item-1-0" /><label for="item-1-0">New Arrivals</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
+									<li><a href="{{$url->getMens()}}">Shirts</a></li>
+									<li><a href="{{$url->getMens()}}">Shoes</a></li>
+									<li><a href="{{$url->getMens()}}">Pants</a></li>
+									<li><a href="{{$url->getMens()}}">SunGlasses</a></li>
 								</ul>
 							</li>
 							
@@ -86,26 +86,26 @@
 						<ul>
 							<li><input type="checkbox"  id="item-2-0" /><label for="item-2-0">Summer Discount Sales</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
+									<li><a href="{{$url->getMens()}}">Shirts</a></li>
+									<li><a href="{{$url->getMens()}}">Shoes</a></li>
+									<li><a href="{{$url->getMens()}}">Pants</a></li>
+									<li><a href="{{$url->getMens()}}">SunGlasses</a></li>
 								</ul>
 							</li>
 							<li><input type="checkbox" id="item-2-1" /><label for="item-2-1">Exciting Offers</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
+									<li><a href="{{$url->getMens()}}">Shirts</a></li>
+									<li><a href="{{$url->getMens()}}">Shoes</a></li>
+									<li><a href="{{$url->getMens()}}">Pants</a></li>
+									<li><a href="{{$url->getMens()}}">SunGlasses</a></li>
 								</ul>
 							</li>
 							<li><input type="checkbox" id="item-2-2" /><label for="item-2-2">Flat Discounts</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
+									<li><a href="{{$url->getMens()}}">Shirts</a></li>
+									<li><a href="{{$url->getMens()}}">Shoes</a></li>
+									<li><a href="{{$url->getMens()}}">Pants</a></li>
+									<li><a href="{{$url->getMens()}}">SunGlasses</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -218,14 +218,14 @@
 							<img src="images/ep2.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 						</div>
 						<div class="item-info-product ">
-									<h4><a href="single.html">Watches</a></h4>
+									<h4><a href="{{$url->getSingle()}}">Watches</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>
@@ -241,14 +241,14 @@
 							<img src="images/a2.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 						</div>
 						<div class="item-info-product ">
-									<h4><a href="single.html">Blazers</a></h4>
+									<h4><a href="{{$url->getSingle()}}">Blazers</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>
@@ -264,14 +264,14 @@
 							<img src="images/mw2.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 						</div>
 						<div class="item-info-product ">
-									<h4><a href="single.html">Shirts</a></h4>
+									<h4><a href="{{$url->getSingle()}}">Shirts</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>
@@ -293,13 +293,13 @@
 						<img src="images/a8.png" alt="" class="pro-image-back">
 							<div class="men-cart-pro">
 								<div class="inner-men-cart-pro">
-									<a href="single.html" class="link-product-add-cart">Quick View</a>
+									<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 								</div>
 							</div>
 							<span class="product-new-top">New</span>				
 					</div>
 					<div class="item-info-product ">
-						<h4><a href="single.html">Blazers</a></h4>
+						<h4><a href="{{$url->getSingle()}}">Blazers</a></h4>
 						<div class="info-product-price">
 							<span class="item_price">$45.99</span>
 							<del>$69.71</del>
@@ -315,13 +315,13 @@
 						<img src="images/mw1.png" alt="" class="pro-image-back">
 							<div class="men-cart-pro">
 								<div class="inner-men-cart-pro">
-									<a href="single.html" class="link-product-add-cart">Quick View</a>
+									<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 								</div>
 							</div>
 							<span class="product-new-top">New</span>				
 					</div>
 					<div class="item-info-product ">
-						<h4><a href="single.html">Sandals</a></h4>
+						<h4><a href="{{$url->getSingle()}}">Sandals</a></h4>
 						<div class="info-product-price">
 							<span class="item_price">$45.99</span>
 							<del>$69.71</del>
@@ -337,13 +337,13 @@
 						<img src="images/ep3.png" alt="" class="pro-image-back">
 							<div class="men-cart-pro">
 								<div class="inner-men-cart-pro">
-									<a href="single.html" class="link-product-add-cart">Quick View</a>
+									<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 								</div>
 							</div>
 							<span class="product-new-top">New</span>				
 					</div>
 					<div class="item-info-product ">
-						<h4><a href="single.html">Watches</a></h4>
+						<h4><a href="{{$url->getSingle()}}">Watches</a></h4>
 						<div class="info-product-price">
 							<span class="item_price">$45.99</span>
 							<del>$69.71</del>
@@ -359,13 +359,13 @@
 						<img src="images/mw3.png" alt="" class="pro-image-back">
 							<div class="men-cart-pro">
 								<div class="inner-men-cart-pro">
-									<a href="single.html" class="link-product-add-cart">Quick View</a>
+									<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 								</div>
 							</div>
 							<span class="product-new-top">New</span>				
 					</div>
 					<div class="item-info-product ">
-						<h4><a href="single.html">Shoes</a></h4>
+						<h4><a href="{{$url->getSingle()}}">Shoes</a></h4>
 						<div class="info-product-price">
 							<span class="item_price">$45.99</span>
 							<del>$69.71</del>
@@ -381,14 +381,14 @@
 									<img src="images/g3.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Shirts</a></h4>
+									<h4><a href="{{$url->getSingle()}}">Shirts</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>
@@ -404,14 +404,14 @@
 									<img src="images/ep4.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">Watches</a></h4>
+									<h4><a href="{{$url->getSingle()}}">Watches</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$119.99</span>
 										<del>$150.71</del>
@@ -427,14 +427,14 @@
 									<img src="images/mw2.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html">T shirts</a></h4>
+									<h4><a href="{{$url->getSingle()}}">T shirts</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>
@@ -450,14 +450,14 @@
 									<img src="images/g2.png" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="single.html"> Shirts</a></h4>
+									<h4><a href="{{$url->getSingle()}}"> Shirts</a></h4>
 									<div class="info-product-price">
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>

@@ -14,6 +14,7 @@ class ViewController extends CookieController
     //
     protected function view(string $viewName, array $viewParams = []) {
         $defautParams = [
+            "url" => $this->urlUtil,
             "title" => "Core PHP - Laravel"
         ];
         return view($viewName, array_merge($defautParams, $viewParams));

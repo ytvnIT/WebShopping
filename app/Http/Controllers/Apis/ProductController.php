@@ -14,15 +14,17 @@ class ProductController extends ApiController
     //
     function cast_to_model($input) {
         $obj = new $this->model();
-        $obj->title = "Hello";
+        // $obj->title = "Hello";
+        // $obj->author = "Loucias";
+        $obj->title = $input['a'];
         $obj->author = "Loucias";
         return $obj;
     }
 
     public function index () {
-        
+
 
         return Product::get();
     }
-    
+
 }
