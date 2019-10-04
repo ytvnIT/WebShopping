@@ -1,6 +1,13 @@
 @extends('layouts.full')
 
 @section('content')
+<!-- banner -->
+<div class="page-head">
+	<div class="container">
+		<h3>Electronics</h3>
+	</div>
+</div>
+<!-- //banner -->
 <div class="electronics">
 	<div class="container">
 		<div class="col-md-8 electro-left text-center">
@@ -79,7 +86,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getElectronic()}}">Apple Iphone 6</a></h4>
@@ -87,7 +94,7 @@
 										<span class="item_price">$500.99</span>
 										<del>$700.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -102,7 +109,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getElectronic()}}">Apple Iphone 6s</a></h4>
@@ -110,7 +117,7 @@
 										<span class="item_price">$799.99</span>
 										<del>$999.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -125,7 +132,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getElectronic()}}">Apple Iphone 6</a></h4>
@@ -133,7 +140,7 @@
 										<span class="item_price">$180.99</span>
 										<del>$250.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -148,7 +155,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getElectronic()}}">Apple Iphone 6s</a></h4>
@@ -156,7 +163,7 @@
 										<span class="item_price">$179.99</span>
 										<del>$200.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -171,7 +178,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">Combo Pack</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
@@ -179,7 +186,7 @@
 										<span class="item_price">$109.99</span>
 										<del>$150.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -194,7 +201,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
@@ -202,7 +209,7 @@
 										<span class="item_price">$129.99</span>
 										<del>$150.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -217,7 +224,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
@@ -225,7 +232,7 @@
 										<span class="item_price">$149.99</span>
 										<del>$180.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -240,7 +247,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
@@ -248,10 +255,10 @@
 										<span class="item_price">$119.99</span>
 										<del>$150.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
-						</div>	
+						</div>
 						<div class="col-md-3 product-men yes-marg">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
@@ -263,7 +270,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{$url->getElectronic()}}">Apple Iphone 6</a></h4>
@@ -271,7 +278,7 @@
 										<span class="item_price">$500.99</span>
 										<del>$700.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -286,7 +293,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getElectronic()}}">Apple Iphone 6s</a></h4>
@@ -294,7 +301,7 @@
 										<span class="item_price">$799.99</span>
 										<del>$999.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -309,7 +316,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
@@ -317,7 +324,7 @@
 										<span class="item_price">$119.99</span>
 										<del>$150.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -332,7 +339,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">50% Off</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getElectronic()}}">Watches</a></h4>
@@ -340,7 +347,7 @@
 										<span class="item_price">$109.99</span>
 										<del>$150.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>

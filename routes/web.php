@@ -1,6 +1,26 @@
 <?php
 
 use App\Utils\UrlUtil;
+use App\Models\MainProduct;
+Route::get("/y",function(){
+    // $posts = App\Models\shopProduct::all();
+        $posts= MainProduct::where('category_id', '1')
+        ->take(5)
+        ->get();
+        foreach ($posts as $post) {
+            echo $post->title. "<br>";
+        }
+});
+
+Route::get("/yy",function(){
+    $countt=shopProduct::chunk(200, function ($posts) {
+        foreach ($posts as $post) {
+            echo $post->title. "<br>";
+        }
+        echo "Hết một chunk";
+    })->count();;
+    echo $countt;
+});
 
 
 Route::get(UrlUtil::home(), 'Pages\\NonAuths\\HomeController@index');
@@ -21,5 +41,6 @@ Auth::routes();// câu lệnh sau dòng này cần phải login
 Route::get('/home', 'Pages\\Auths\\HomeController@index');
 
 Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');

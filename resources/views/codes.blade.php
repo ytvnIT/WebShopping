@@ -1,10 +1,17 @@
 @extends('layouts.full')
 
 @section('content')
+<!-- banner -->
+<div class="page-head">
+	<div class="container">
+		<h3>Short Codes</h3>
+	</div>
+</div>
+<!-- //banner -->
 <!-- typography -->
 <div class="typrography">
 	 <div class="container">
-			
+
 		<div class="grid_3 grid_4 wow fadeInLeft animated" data-wow-delay=".5s">
 		     <h3 class="bars">Headings</h3>
 		    <div class="bs-example">
@@ -91,7 +98,7 @@
                 Error ! Change few things. </div>
           </div>
 		  <div class="col-sm-6 col-md-6 col-lg-6 mb-60">
-            <h4 class="text-blue title-border mb-30 bars">Tab</h4>            
+            <h4 class="text-blue title-border mb-30 bars">Tab</h4>
             <div class="horizontal-tab">
               <ul class="nav nav-tabs">
                 <li class=""><a href="#tab1" data-toggle="tab" aria-expanded="false">Tab1</a></li>
@@ -140,11 +147,11 @@
 			 <h3 class="bars">Progress Bars</h3>
 			  <div class="tab-content">
 				 <div class="tab-pane active" id="domprogress">
-					 <div class="progress">    
+					 <div class="progress">
 					      <div class="progress-bar progress-bar-primary" style="width: 20%"></div>
 					 </div>
 					 <p>Info with <code>progress-bar-info</code> class.</p>
-					 <div class="progress">    
+					 <div class="progress">
 						 <div class="progress-bar progress-bar-info" style="width: 60%"></div>
 					 </div>
 					 <p>Success with <code>progress-bar-success</code> class.</p>
@@ -172,7 +179,7 @@
 				   </div>
 			   </div>
 		   </div>
-		   
+
 		   <div class="grid_3 grid_5 wow fadeInRight animated" data-wow-delay=".5s">
 			 <h3 class="bars">Pagination</h3>
 			 <div class="col-md-6">
@@ -208,7 +215,7 @@
 					<li><a href="#">5</a></li>
 					<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
 				  </ul>
-				 </nav>				 
+				 </nav>
 			 </div>
 			 <div class="col-md-6">
 					<ul class="pagination pagination-lg">
@@ -296,17 +303,17 @@
 								<td><span class="badge badge-danger">999</span></td>
 							</tr>
 						</tbody>
-					  </table>                    
+					  </table>
 				</div>
 				<div class="col-md-6">
 				  <p>Easily highlight new or unread items with the <code>.badge</code> class</p>
-					<div class="list-group list-group-alternate"> 
-						<a href="#" class="list-group-item"><span class="badge">201</span> <i class="ti ti-email"></i> Inbox </a> 
-						<a href="#" class="list-group-item"><span class="badge badge-primary">5021</span> <i class="ti ti-eye"></i> Profile visits </a> 
-						<a href="#" class="list-group-item"><span class="badge">14</span> <i class="ti ti-headphone-alt"></i> Call </a> 
-						<a href="#" class="list-group-item"><span class="badge">20</span> <i class="ti ti-comments"></i> Messages </a> 
-						<a href="#" class="list-group-item"><span class="badge badge-warning">14</span> <i class="ti ti-bookmark"></i> Bookmarks </a> 
-						<a href="#" class="list-group-item"><span class="badge badge-danger">30</span> <i class="ti ti-bell"></i> Notifications </a> 
+					<div class="list-group list-group-alternate">
+						<a href="#" class="list-group-item"><span class="badge">201</span> <i class="ti ti-email"></i> Inbox </a>
+						<a href="#" class="list-group-item"><span class="badge badge-primary">5021</span> <i class="ti ti-eye"></i> Profile visits </a>
+						<a href="#" class="list-group-item"><span class="badge">14</span> <i class="ti ti-headphone-alt"></i> Call </a>
+						<a href="#" class="list-group-item"><span class="badge">20</span> <i class="ti ti-comments"></i> Messages </a>
+						<a href="#" class="list-group-item"><span class="badge badge-warning">14</span> <i class="ti ti-bookmark"></i> Bookmarks </a>
+						<a href="#" class="list-group-item"><span class="badge badge-danger">30</span> <i class="ti ti-bell"></i> Notifications </a>
 					</div>
 			   </div>
 			   <div class="clearfix"> </div>

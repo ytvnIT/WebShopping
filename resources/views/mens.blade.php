@@ -1,6 +1,11 @@
 @extends('layouts.full')
 
 @section('content')
+<div class="page-head">
+	<div class="container">
+		<h3>Men's Wear</h3>
+	</div>
+</div>
 <!-- mens -->
 <div class="men-wear">
 	<div class="container">
@@ -8,13 +13,13 @@
 			<div class="filter-price">
 				<h3>Filter By Price</h3>
 					<ul class="dropdown-menu6">
-						<li>                
-							<div id="slider-range"></div>							
+						<li>
+							<div id="slider-range"></div>
 							<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
-						</li>			
+						</li>
 					</ul>
 							<!---->
-							<script type='text/javascript'>//<![CDATA[ 
+							<script type='text/javascript'>//<![CDATA[
 							$(window).load(function(){
 							 $( "#slider-range" ).slider({
 										range: true,
@@ -26,7 +31,7 @@
 							 });
 							$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
-							});//]]>  
+							});//]]>
 
 							</script>
 						<script type="text/javascript" src="js/jquery-ui.js"></script>
@@ -79,7 +84,7 @@
 									<li><a href="{{$url->getMens()}}">SunGlasses</a></li>
 								</ul>
 							</li>
-							
+
 						</ul>
 					</li>
 					<li><input type="checkbox" checked="checked" id="item-2" /><label for="item-2">Best Offers</label>
@@ -114,16 +119,16 @@
 			</div>
 			<div class="community-poll">
 				<h4>Community Poll</h4>
-				<div class="swit form">	
+				<div class="swit form">
 					<form>
 					<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio" checked=""><i></i>More convenient for shipping and delivery</label> </div></div>
 					<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Lower Price</label> </div></div>
 					<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Track your item</label> </div></div>
 					<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Bigger Choice</label> </div></div>
-					<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>More colors to choose</label> </div></div>	
+					<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>More colors to choose</label> </div></div>
 					<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Secured Payment</label> </div></div>
-					<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Money back guaranteed</label> </div></div>	
-					<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Others</label> </div></div>		
+					<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Money back guaranteed</label> </div></div>
+					<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Others</label> </div></div>
 					<input type="submit" value="SEND">
 					</form>
 				</div>
@@ -137,12 +142,12 @@
 					<h6>Sort By</h6>
 					<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
 						<option value="null">Default</option>
-						<option value="null">Name(A - Z)</option> 
+						<option value="null">Name(A - Z)</option>
 						<option value="null">Name(Z - A)</option>
 						<option value="null">Price(High - Low)</option>
-						<option value="null">Price(Low - High)</option>	
+						<option value="null">Price(Low - High)</option>
 						<option value="null">Model(A - Z)</option>
-						<option value="null">Model(Z - A)</option>					
+						<option value="null">Model(Z - A)</option>
 					</select>
 					<div class="clearfix"></div>
 				</div>
@@ -150,9 +155,9 @@
 					<h6>Showing</h6>
 					<select id="country2" onchange="change_country(this.value)" class="frm-field required sect">
 						<option value="null">7</option>
-						<option value="null">14</option> 
-						<option value="null">28</option>					
-						<option value="null">35</option>								
+						<option value="null">14</option>
+						<option value="null">28</option>
+						<option value="null">35</option>
 					</select>
 					<div class="clearfix"></div>
 				</div>
@@ -203,8 +208,8 @@
 				</div>
 				<div class="col-sm-8 men-wear-right">
 					<h4>Exclusive Men's Collections</h4>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
 					ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
 					explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
 					odit aut fugit. </p>
@@ -222,7 +227,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 						</div>
 						<div class="item-info-product ">
 									<h4><a href="{{$url->getSingle()}}">Watches</a></h4>
@@ -230,7 +235,7 @@
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -245,7 +250,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 						</div>
 						<div class="item-info-product ">
 									<h4><a href="{{$url->getSingle()}}">Blazers</a></h4>
@@ -253,7 +258,7 @@
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -268,7 +273,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 						</div>
 						<div class="item-info-product ">
 									<h4><a href="{{$url->getSingle()}}">Shirts</a></h4>
@@ -276,16 +281,16 @@
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="clearfix"></div>
 		</div>
 		<div class="clearfix"></div>
 		<div class="single-pro">
-			
+
 			<div class="col-md-3 product-men">
 				<div class="men-pro-item simpleCart_shelfItem">
 					<div class="men-thumb-item">
@@ -296,7 +301,7 @@
 									<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 								</div>
 							</div>
-							<span class="product-new-top">New</span>				
+							<span class="product-new-top">New</span>
 					</div>
 					<div class="item-info-product ">
 						<h4><a href="{{$url->getSingle()}}">Blazers</a></h4>
@@ -304,7 +309,7 @@
 							<span class="item_price">$45.99</span>
 							<del>$69.71</del>
 						</div>
-						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 					</div>
 				</div>
 			</div>
@@ -318,7 +323,7 @@
 									<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 								</div>
 							</div>
-							<span class="product-new-top">New</span>				
+							<span class="product-new-top">New</span>
 					</div>
 					<div class="item-info-product ">
 						<h4><a href="{{$url->getSingle()}}">Sandals</a></h4>
@@ -326,7 +331,7 @@
 							<span class="item_price">$45.99</span>
 							<del>$69.71</del>
 						</div>
-						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 					</div>
 				</div>
 			</div>
@@ -340,7 +345,7 @@
 									<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 								</div>
 							</div>
-							<span class="product-new-top">New</span>				
+							<span class="product-new-top">New</span>
 					</div>
 					<div class="item-info-product ">
 						<h4><a href="{{$url->getSingle()}}">Watches</a></h4>
@@ -348,7 +353,7 @@
 							<span class="item_price">$45.99</span>
 							<del>$69.71</del>
 						</div>
-						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 					</div>
 				</div>
 			</div>
@@ -362,7 +367,7 @@
 									<a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
 								</div>
 							</div>
-							<span class="product-new-top">New</span>				
+							<span class="product-new-top">New</span>
 					</div>
 					<div class="item-info-product ">
 						<h4><a href="{{$url->getSingle()}}">Shoes</a></h4>
@@ -370,7 +375,7 @@
 							<span class="item_price">$45.99</span>
 							<del>$69.71</del>
 						</div>
-						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+						<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 					</div>
 				</div>
 			</div>
@@ -385,7 +390,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getSingle()}}">Shirts</a></h4>
@@ -393,7 +398,7 @@
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -408,7 +413,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getSingle()}}">Watches</a></h4>
@@ -416,7 +421,7 @@
 										<span class="item_price">$119.99</span>
 										<del>$150.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -431,7 +436,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getSingle()}}">T shirts</a></h4>
@@ -439,7 +444,7 @@
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -454,7 +459,7 @@
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
-										
+
 								</div>
 								<div class="item-info-product ">
 									<h4><a href="{{$url->getSingle()}}"> Shirts</a></h4>
@@ -462,7 +467,7 @@
 										<span class="item_price">$45.99</span>
 										<del>$69.71</del>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
 								</div>
 							</div>
 						</div>
@@ -480,6 +485,6 @@
 			</ul>
 		</div>
 	</div>
-</div>	
+</div>
 <!-- //mens -->
 @endsection

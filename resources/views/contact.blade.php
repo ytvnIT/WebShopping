@@ -1,6 +1,13 @@
 @extends('layouts.full')
 
 @section('content')
+<!-- banner -->
+<div class="page-head">
+	<div class="container">
+		<h3>Contact</h3>
+	</div>
+</div>
+<!-- //banner -->
 <!-- contact -->
 	<div class="contact">
 		<div class="container">
@@ -43,7 +50,7 @@
 			</form>
 		</div>
 	</div>
-	
+
 <!-- //contact -->
 
 @endsection
