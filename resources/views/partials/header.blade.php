@@ -14,7 +14,7 @@
 <div class="header-bot">
 	<div class="container">
 		<div class="col-md-3 header-left">
-			<h1><a href="{{$url->getHome()}}"><img src="images/logo3.jpg"></a></h1>
+			<h1><a href="{{$url->getHome()}}"><img src="{{asset('images/logo3.jpg')}}"></a></h1>
 		</div>
 		<div class="col-md-6 header-middle">
 			<form>
@@ -51,5 +51,4 @@
 		<div class="clearfix"></div>
 	</div>
 </div>
-<!-- @include('partials.login',[]) -->
-<!-- //header-bot -->
+
