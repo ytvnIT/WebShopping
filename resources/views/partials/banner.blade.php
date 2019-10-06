@@ -22,7 +22,7 @@
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="row">
 									<div class="col-sm-6 multi-gd-img1 multi-gd-text ">
-										<a href="{{$url->getMens()}}"><img src="images/woo1.jpg" alt=" "/></a>
+										<a href="{{$url->getMens()}}"><im	alt=" "/></a>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
