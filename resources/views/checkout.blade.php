@@ -1,6 +1,13 @@
 @extends('layouts.full')
 
 @section('content')
+<!-- banner -->
+<div class="page-head">
+	<div class="container">
+		<h3>Check Out</h3>
+	</div>
+</div>
+<!-- //banner -->
 <!-- check out -->
 <div class="checkout">
 	<div class="container">
@@ -26,14 +33,14 @@
 									$('.rem1').fadeOut('slow', function(c){
 										$('.rem1').remove();
 									});
-									});	  
+									});
 								});
 						   </script>
 						</td>
 						<td class="invert-image"><a href="{{$url->getSingle()}}"><img src="images/w4.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
+							 <div class="quantity">
+								<div class="quantity-select">
 									<div class="entry value-minus">&nbsp;</div>
 									<div class="entry value"><span>1</span></div>
 									<div class="entry value-plus active">&nbsp;</div>
@@ -53,14 +60,14 @@
 									$('.rem2').fadeOut('slow', function(c){
 										$('.rem2').remove();
 									});
-									});	  
+									});
 								});
 						   </script>
 						</td>
 						<td class="invert-image"><a href="{{$url->getSingle()}}"><img src="images/ep3.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
+							 <div class="quantity">
+								<div class="quantity-select">
 									<div class="entry value-minus">&nbsp;</div>
 									<div class="entry value"><span>1</span></div>
 									<div class="entry value-plus active">&nbsp;</div>
@@ -69,7 +76,7 @@
 						</td>
 						<td class="invert">Watches</td>
 						<td class="invert">$45.99</td>
-						
+
 					</tr>
 					<tr class="rem3">
 						<td class="invert-closeb">
@@ -81,14 +88,14 @@
 									$('.rem3').fadeOut('slow', function(c){
 										$('.rem3').remove();
 									});
-									});	  
+									});
 								});
 						   </script>
 						</td>
 						<td class="invert-image"><a href="{{$url->getSingle()}}"><img src="images/w2.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
+							 <div class="quantity">
+								<div class="quantity-select">
 									<div class="entry value-minus">&nbsp;</div>
 									<div class="entry value"><span>1</span></div>
 									<div class="entry value-plus active">&nbsp;</div>
@@ -97,7 +104,7 @@
 						</td>
 						<td class="invert">Sandals</td>
 						<td class="invert">$45.99</td>
-						
+
 					</tr>
 					<tr class="rem4">
 						<td class="invert-closeb">
@@ -109,14 +116,14 @@
 									$('.rem4').fadeOut('slow', function(c){
 										$('.rem4').remove();
 									});
-									});	  
+									});
 								});
 						   </script>
 						</td>
 						<td class="invert-image"><a href="{{$url->getSingle()}}"><img src="images/w1.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
+							 <div class="quantity">
+								<div class="quantity-select">
 									<div class="entry value-minus">&nbsp;</div>
 									<div class="entry value"><span>1</span></div>
 									<div class="entry value-plus active">&nbsp;</div>
@@ -125,9 +132,9 @@
 						</td>
 						<td class="invert">Wedges</td>
 						<td class="invert">$45.99</td>
-						
+
 					</tr>
-					
+
 								<!--quantity-->
 									<script>
 									$('.value-plus').on('click', function(){
@@ -143,8 +150,8 @@
 								<!--quantity-->
 			</table>
 		</div>
-		<div class="checkout-left">	
-				
+		<div class="checkout-left">
+
 				<div class="checkout-right-basket animated wow slideInRight" data-wow-delay=".5s">
 					<a href="{{$url->getMens()}}"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Back To Shopping</a>
 				</div>
@@ -161,6 +168,6 @@
 				<div class="clearfix"> </div>
 			</div>
 	</div>
-</div>	
+</div>
 <!-- //check out -->
 @endsection

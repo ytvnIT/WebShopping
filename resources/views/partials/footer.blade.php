@@ -2,10 +2,10 @@
 <div class="footer">
 	<div class="container">
 		<div class="col-md-3 footer-left">
-			<h2><a href="{{$url->getHome()}}"><img src="images/logo3.jpg" alt=" " /></a></h2>
+			<h2><a href="{{$url->getHome()}}"><img src="{{asset('images/logo3.jpg')}}" alt=" " /></a></h2>
 			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
-			sit amet, consectetur, adipisci velit, sed quia non 
-			numquam eius modi tempora incidunt ut labore 
+			sit amet, consectetur, adipisci velit, sed quia non
+			numquam eius modi tempora incidunt ut labore
 			et dolore magnam aliquam quaerat voluptatem.</p>
 		</div>
 		<div class="col-md-9 footer-right">
@@ -31,7 +31,7 @@
 						<li><a href="{{$url->getContact()}}">Contact</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="col-md-4 sign-gd-two">
 					<h4>Store Information</h4>
 					<ul>
@@ -43,15 +43,15 @@
 				<div class="col-md-4 sign-gd flickr-post">
 					<h4>Flickr Posts</h4>
 					<ul>
-						<li><a href="{{$url->getSingle()}}"><img src="images/b15.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="{{$url->getSingle()}}"><img src="images/b16.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="{{$url->getSingle()}}"><img src="images/b17.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="{{$url->getSingle()}}"><img src="images/b18.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="{{$url->getSingle()}}"><img src="images/b15.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="{{$url->getSingle()}}"><img src="images/b16.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="{{$url->getSingle()}}"><img src="images/b17.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="{{$url->getSingle()}}"><img src="images/b18.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="{{$url->getSingle()}}"><img src="images/b15.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="{{$url->getSingle()}}"><img src="{{asset('images/b15.jpg')}}" alt=" " class="img-responsive" /></a></li>
+						<li><a href="{{$url->getSingle()}}"><img src="{{asset('images/b16.jpg')}}" alt=" " class="img-responsive" /></a></li>
+						<li><a href="{{$url->getSingle()}}"><img src="{{asset('images/b17.jpg')}}" alt=" " class="img-responsive" /></a></li>
+						<li><a href="{{$url->getSingle()}}"><img src="{{asset('images/b18.jpg')}}" alt=" " class="img-responsive" /></a></li>
+						<li><a href="{{$url->getSingle()}}"><img src="{{asset('images/b15.jpg')}}" alt=" " class="img-responsive" /></a></li>
+						<li><a href="{{$url->getSingle()}}"><img src="{{asset('images/b16.jpg')}}" alt=" " class="img-responsive" /></a></li>
+						<li><a href="{{$url->getSingle()}}"><img src="{{asset('images/b17.jpg')}}" alt=" " class="img-responsive" /></a></li>
+						<li><a href="{{$url->getSingle()}}"><img src="{{asset('images/b18.jpg')}}" alt=" " class="img-responsive" /></a></li>
+						<li><a href="{{$url->getSingle()}}"><img src="{{asset('images/b15.jpg')}}" alt=" " class="img-responsive" /></a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>

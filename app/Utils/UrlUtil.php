@@ -26,6 +26,12 @@ class UrlUtil {
     public static function womens() {
         return "/womens";
     }
+    public static function clothings() {
+        return "/clothings";
+    }
+    public static function shoes() {
+        return "/shoes";
+    }
 
     public function getHome() {return UrlUtil :: home(); }
     public function getCheckOut() {return UrlUtil :: checkout(); }
@@ -35,6 +41,8 @@ class UrlUtil {
     public function getSingle() {return UrlUtil :: single(); }
     public function getWomens() {return UrlUtil :: womens(); }
     public function getMens() {return UrlUtil :: mens(); }
+    public function getClothings() {return UrlUtil :: clothings(); }
+    public function getShoes() {return UrlUtil :: shoes(); }
 
 
 }

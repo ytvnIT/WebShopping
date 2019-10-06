@@ -25,16 +25,16 @@ abstract class ApiController extends CookieController
         return $obj;
     }
     public function read() {
-        
+
     }
     public function update() {
-        
+
     }
     public function delete() {
-        
+
     }
 
-    
+
 
     // public abstract function before_create();
     // public abstract function before_update();
