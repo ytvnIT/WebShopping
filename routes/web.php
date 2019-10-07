@@ -33,7 +33,20 @@ Route::get(UrlUtil::mens(), 'Pages\\NonAuths\\MensController@clothing');
 Route::group(['prefix'=>UrlUtil::mens()], function(){
     Route::get(UrlUtil::clothings(), 'Pages\\NonAuths\\MensController@clothing');
     Route::get(UrlUtil::shoes(), 'Pages\\NonAuths\\MensController@shoe');
+    Route::get(UrlUtil::watches(), 'Pages\\NonAuths\\MensController@watch');
+    Route::get(UrlUtil::bags(), 'Pages\\NonAuths\\MensController@bag');
+    Route::get(UrlUtil::sunglasses(), 'Pages\\NonAuths\\MensController@sunglasse');
+    Route::get(UrlUtil::belts(), 'Pages\\NonAuths\\MensController@belt');
 
+
+});
+Route::group(['prefix'=>UrlUtil::womens()], function(){
+    Route::get(UrlUtil::clothings(), 'Pages\\NonAuths\\MensController@clothing');
+    Route::get(UrlUtil::shoes(), 'Pages\\NonAuths\\MensController@shoe');
+    Route::get(UrlUtil::watches(), 'Pages\\NonAuths\\MensController@watch');
+    Route::get(UrlUtil::bags(), 'Pages\\NonAuths\\MensController@bag');
+    Route::get(UrlUtil::sunglasses(), 'Pages\\NonAuths\\MensController@sunglasse');
+    Route::get(UrlUtil::belts(), 'Pages\\NonAuths\\MensController@belt');
 
 });
 Route::get(UrlUtil::single(), 'Pages\\NonAuths\\SingleController@index');

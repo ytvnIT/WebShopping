@@ -32,16 +32,16 @@
 											<li><a href="{{$url->getMens()}}{{$url->getClothings()}}">Clothing</a></li>
 											<li><a href="{{$url->getMens()}}">Wallets</a></li>
 											<li><a href="{{$url->getMens()}}{{$url->getShoes()}}">Footwear</a></li>
-											<li><a href="{{$url->getMens()}}">Watches</a></li>
+											<li><a href="{{$url->getMens()}}{{$url->getWatches()}}">Watches</a></li>
 											<li><a href="{{$url->getMens()}}">Accessories</a></li>
-											<li><a href="{{$url->getMens()}}">Bags</a></li>
+											<li><a href="{{$url->getMens()}}{{$url->getBags()}}">Bags</a></li>
 											<li><a href="{{$url->getMens()}}">Caps & Hats</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="{{$url->getMens()}}">Jewellery</a></li>
-											<li><a href="{{$url->getMens()}}">Sunglasses</a></li>
+											<li><a href="{{$url->getMens()}}{{$url->getBelts()}}">Belts</a></li>
+											<li><a href="{{$url->getMens()}}{{$url->getSunglasses()}}">Sunglasses</a></li>
 											<li><a href="{{$url->getMens()}}">Perfumes</a></li>
 											<li><a href="{{$url->getMens()}}">Beauty</a></li>
 											<li><a href="{{$url->getMens()}}">Shirts</a></li>
@@ -53,30 +53,31 @@
 								</div>
 							</ul>
 					</li>
+				
 					<li class="dropdown menu__item">
 						<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">women's wear <span class="caret"></span></a>
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="row">
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="{{$url->getMens()}}">Clothing</a></li>
-											<li><a href="{{$url->getMens()}}">Wallets</a></li>
-											<li><a href="{{$url->getMens()}}">Footwear</a></li>
-											<li><a href="{{$url->getMens()}}">Watches</a></li>
-											<li><a href="{{$url->getMens()}}">Accessories</a></li>
-											<li><a href="{{$url->getMens()}}">Bags</a></li>
-											<li><a href="{{$url->getMens()}}">Caps & Hats</a></li>
+											<li><a href="{{$url->getWomens()}}{{$url->getClothings()}}">Clothing</a></li>
+											<li><a href="{{$url->getWomens()}}">Wallets</a></li>
+											<li><a href="{{$url->getWomens()}}{{$url->getShoes()}}">Footwear</a></li>
+											<li><a href="{{$url->getWomens()}}{{$url->getWatches()}}">Watches</a></li>
+											<li><a href="{{$url->getWomens()}}{{$url->getBags()}}">Accessories</a></li>
+											<li><a href="{{$url->getWomens()}}">Bags</a></li>
+											<li><a href="{{$url->getWomens()}}">Caps & Hats</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="{{$url->getMens()}}">Jewellery</a></li>
-											<li><a href="{{$url->getMens()}}">Sunglasses</a></li>
-											<li><a href="{{$url->getMens()}}">Perfumes</a></li>
-											<li><a href="{{$url->getMens()}}">Beauty</a></li>
-											<li><a href="{{$url->getMens()}}">Shirts</a></li>
-											<li><a href="{{$url->getMens()}}">Sunglasses</a></li>
-											<li><a href="{{$url->getMens()}}">Swimwear</a></li>
+											<li><a href="{{$url->getWomens()}}{{$url->getBelts()}}">Belts</a></li>
+											<li><a href="{{$url->getWomens()}}">Sunglasses</a></li>
+											<li><a href="{{$url->getWomens()}}">Perfumes</a></li>
+											<li><a href="{{$url->getWomens()}}">Beauty</a></li>
+											<li><a href="{{$url->getWomens()}}">Shirts</a></li>
+											<li><a href="{{$url->getWomens()}}{{$url->getSunglasses()}}">Sunglasses</a></li>
+											<li><a href="{{$url->getWomens()}}">Swimwear</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-6 multi-gd-img multi-gd-text ">

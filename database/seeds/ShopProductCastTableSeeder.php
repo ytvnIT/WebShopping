@@ -12,7 +12,7 @@ class ShopProductCastTableSeeder extends Seeder
      */
     public function run()
     {
-        $json=File::get('D:\Xampp\htdocs\Shopping\Shopping_Card\database\seeds\data_shopping.json');
+        $json=File::get('C:\Users\Admin\Desktop\Shopping_Card\database\seeds\data_shopping.json');
         $data=json_decode($json);
         $arr=[];
         foreach($data as $obj){

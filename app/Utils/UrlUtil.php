@@ -32,7 +32,18 @@ class UrlUtil {
     public static function shoes() {
         return "/shoes";
     }
-
+    public static function watches() {
+        return "/watches";
+    }
+    public static function bags() {
+        return "/bags";
+    }
+    public static function sunglasses() {
+        return "/sunglasse";
+    }
+    public static function belts() {
+        return "/belt";
+    }
     public function getHome() {return UrlUtil :: home(); }
     public function getCheckOut() {return UrlUtil :: checkout(); }
     public function getCodes() {return UrlUtil :: codes(); }
@@ -43,6 +54,10 @@ class UrlUtil {
     public function getMens() {return UrlUtil :: mens(); }
     public function getClothings() {return UrlUtil :: clothings(); }
     public function getShoes() {return UrlUtil :: shoes(); }
+    public function getWatches() {return UrlUtil :: watches(); }
+    public function getBags() {return UrlUtil :: bags(); }
+    public function getSunglasses() {return UrlUtil :: sunglasses(); }
+    public function getBelts() {return UrlUtil :: belts(); }
 
 
 }
