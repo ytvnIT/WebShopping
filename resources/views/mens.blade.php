@@ -253,14 +253,14 @@
                         <img src={{$products[$i]->src}} alt="" class="pro-image-back">
                         <div class="men-cart-pro">
                             <div class="inner-men-cart-pro">
-                                <a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
+                                <a href="{{$url->getSingle()}}/{{$products[$i]->id}}/{{$products[$i]->id}}" class="link-product-add-cart">Quick View</a>
                             </div>
                         </div>
                         <span class="product-new-top">New</span>
 
                     </div>
                     <div class="item-info-product ">
-                        <h4><a href="{{$url->getSingle()}}">{{$products[$i]->title}}</a></h4>
+                        <h4><a href="{{$url->getSingle()}}/{{$products[$i]->id}}">{{$products[$i]->title}}</a></h4>
                         <div class="info-product-price">
                             <span class="item_price">{{$products[$i]->priceold}}</span>
                             <del>{{$products[$i]->pricespecial}}</del>
@@ -284,13 +284,13 @@
                         <img src={{$products[$i]->src}} alt="" class="pro-image-back">
                         <div class="men-cart-pro">
                             <div class="inner-men-cart-pro">
-                                <a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
+                                <a href="{{$url->getSingle()}}/{{$products[$i]->id}}" class="link-product-add-cart">Quick View</a>
                             </div>
                         </div>
                         <span class="product-new-top">New</span>
                     </div>
                     <div class="item-info-product ">
-                        <h4><a href="{{$url->getSingle()}}">{{$products[$i]->title}}</a></h4>
+                        <h4><a href="{{$url->getSingle()}}/{{$products[$i]->id}}">{{$products[$i]->title}}</a></h4>
                         <div class="info-product-price">
                             <span class="item_price">{{$products[$i]->priceold}}</span>
                         <del>{{$products[$i]->pricespecial}}</del>
@@ -309,13 +309,13 @@
                         <img src={{$products[$i]->src}} alt="" class="pro-image-back">
                         <div class="men-cart-pro">
                             <div class="inner-men-cart-pro">
-                                <a href="{{$url->getSingle()}}" class="link-product-add-cart">Quick View</a>
+                                <a href="{{$url->getSingle()}}/{{$products[$i]->id}}" class="link-product-add-cart">Quick View</a>
                             </div>
                         </div>
                         <span class="product-new-top">New</span>
                     </div>
                     <div class="item-info-product ">
-                        <h4><a href="{{$url->getSingle()}}">{{$products[$i]->title}}</a></h4>
+                        <h4><a href="{{$url->getSingle()}}/{{$products[$i]->id}}">{{$products[$i]->title}}</a></h4>
                         <div class="info-product-price">
                             <span class="item_price">{{$products[$i]->priceold}}</span>
                         <del>{{$products[$i]->pricespecial}}</del>

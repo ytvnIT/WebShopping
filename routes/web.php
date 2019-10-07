@@ -49,7 +49,8 @@ Route::group(['prefix'=>UrlUtil::womens()], function(){
     Route::get(UrlUtil::belts(), 'Pages\\NonAuths\\MensController@belt');
 
 });
-Route::get(UrlUtil::single(), 'Pages\\NonAuths\\SingleController@index');
+// Route::get(UrlUtil::single(), 'Pages\\NonAuths\\SingleController@index');
+Route::get('/single/{id}', 'Pages\\NonAuths\\SingleController@index');
 Route::get(UrlUtil::womens(), 'Pages\\NonAuths\\WomensController@index');
 Route::get(UrlUtil::contact(), 'Pages\\NonAuths\\ContactController@index');
 

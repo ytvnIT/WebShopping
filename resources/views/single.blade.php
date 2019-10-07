@@ -27,10 +27,10 @@
 					<!-- //FlexSlider-->
 					<ul class="slides">
 						<li data-thumb="images/d2.jpg">
-							<div class="thumb-image"> <img src="images/d2.jpg" data-imagezoom="true" class="img-responsive"> </div>
+							<div class="thumb-image"> <img src="{{asset('images/d2.jpg')}}" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
 						<li data-thumb="images/d1.jpg">
-							<div class="thumb-image"> <img src="images/d1.jpg" data-imagezoom="true" class="img-responsive"> </div>
+							<div class="thumb-image"> <img src={{$detail[0]->src}} data-imagezoom="true" class="img-responsive"> </div>
 						</li>
 						<li data-thumb="images/d3.jpg">
 							<div class="thumb-image"> <img src="images/d3.jpg" data-imagezoom="true" class="img-responsive"> </div>
