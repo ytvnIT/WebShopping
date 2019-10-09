@@ -22,16 +22,16 @@
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="row">
 									<div class="col-sm-6 multi-gd-img1 multi-gd-text ">
-										
+
 
 										<a href="{{$url->getMens()}}"><img src="{{asset('images/woo1.jpg')}}" alt=" "/></a>
 
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="{{$url->getMens()}}{{$url->getClothings()}}">Clothing</a></li>
+											<li><a href="{{$url->getMens()}}{{$url->getClothings()."/1"}}">Clothing</a></li>
 											<li><a href="{{$url->getMens()}}">Wallets</a></li>
-											<li><a href="{{$url->getMens()}}{{$url->getShoes()}}">Footwear</a></li>
+											<li><a href="{{$url->getMens()}}{{$url->getShoes()."/1"}}">Footwear</a></li>
 											<li><a href="{{$url->getMens()}}{{$url->getWatches()}}">Watches</a></li>
 											<li><a href="{{$url->getMens()}}">Accessories</a></li>
 											<li><a href="{{$url->getMens()}}{{$url->getBags()}}">Bags</a></li>
@@ -53,7 +53,7 @@
 								</div>
 							</ul>
 					</li>
-				
+
 					<li class="dropdown menu__item">
 						<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">women's wear <span class="caret"></span></a>
 							<ul class="dropdown-menu multi-column columns-3">

@@ -245,15 +245,30 @@
                 <div class="clearfix"></div>
             </div>
             <!-- col 4 -->
-            @for($i=0;$i<=2;$i++)
-            <div class="col-md-4 product-men no-pad-men">
+
+            @php
+
+            $n1=$n2=$n3=0;
+            if(count($products)>=2) $n1=2;
+            else $n1=0;
+
+            if(count($products)>=6) $n2=6;
+            else $n2=0;
+
+            if(count($products)>=10) $n3=10;
+            else $n3=0;
+
+            @endphp
+
+            @for($i=0;$i<=$n1;$i++) <div class="col-md-4 product-men no-pad-men">
                 <div class="men-pro-item simpleCart_shelfItem">
                     <div class="men-thumb-item">
                         <img src={{$products[$i]->src}} alt="" class="pro-image-front">
                         <img src={{$products[$i]->src}} alt="" class="pro-image-back">
                         <div class="men-cart-pro">
                             <div class="inner-men-cart-pro">
-                                <a href="{{$url->getSingle()}}/{{$products[$i]->id}}/{{$products[$i]->id}}" class="link-product-add-cart">Quick View</a>
+                                <a href="{{$url->getSingle()}}/{{$products[$i]->id}}/{{$products[$i]->id}}"
+                                    class="link-product-add-cart">Quick View</a>
                             </div>
                         </div>
                         <span class="product-new-top">New</span>
@@ -268,79 +283,92 @@
                         <a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
                     </div>
                 </div>
-            </div>
-            @endfor
-<!-- end col 4 -->
-            <div class="clearfix"></div>
         </div>
+        @endfor
+        <!-- end col 4 -->
         <div class="clearfix"></div>
-        <div class="single-pro">
-
-            @for($i=3;$i<=6;$i++)
-            <div class="col-md-3 product-men">
-                <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item">
-                        <img src={{$products[$i]->src}} alt="" class="pro-image-front">
-                        <img src={{$products[$i]->src}} alt="" class="pro-image-back">
-                        <div class="men-cart-pro">
-                            <div class="inner-men-cart-pro">
-                                <a href="{{$url->getSingle()}}/{{$products[$i]->id}}" class="link-product-add-cart">Quick View</a>
-                            </div>
-                        </div>
-                        <span class="product-new-top">New</span>
-                    </div>
-                    <div class="item-info-product ">
-                        <h4><a href="{{$url->getSingle()}}/{{$products[$i]->id}}">{{$products[$i]->title}}</a></h4>
-                        <div class="info-product-price">
-                            <span class="item_price">{{$products[$i]->priceold}}</span>
-                        <del>{{$products[$i]->pricespecial}}</del>
-                        </div>
-                        <a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-            @endfor
-
-            @for($i=7;$i<=10;$i++)
-            <div class="col-md-3 product-men yes-marg">
-            <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item">
-                        <img src={{$products[$i]->src}} alt="" class="pro-image-front">
-                        <img src={{$products[$i]->src}} alt="" class="pro-image-back">
-                        <div class="men-cart-pro">
-                            <div class="inner-men-cart-pro">
-                                <a href="{{$url->getSingle()}}/{{$products[$i]->id}}" class="link-product-add-cart">Quick View</a>
-                            </div>
-                        </div>
-                        <span class="product-new-top">New</span>
-                    </div>
-                    <div class="item-info-product ">
-                        <h4><a href="{{$url->getSingle()}}/{{$products[$i]->id}}">{{$products[$i]->title}}</a></h4>
-                        <div class="info-product-price">
-                            <span class="item_price">{{$products[$i]->priceold}}</span>
-                        <del>{{$products[$i]->pricespecial}}</del>
-                        </div>
-                        <a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-            @endfor
-
-
-            <div class="clearfix"></div>
-        </div>
-        <div class="pagination-grid text-right">
-            <ul class="pagination paging">
-                <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                <li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-            </ul>
-        </div>
     </div>
+    <div class="clearfix"></div>
+    <div class="single-pro">
+
+        @for($i=3;$i<=$n2;$i++) <div class="col-md-3 product-men">
+            <div class="men-pro-item simpleCart_shelfItem">
+                <div class="men-thumb-item">
+                    <img src={{$products[$i]->src}} alt="" class="pro-image-front">
+                    <img src={{$products[$i]->src}} alt="" class="pro-image-back">
+                    <div class="men-cart-pro">
+                        <div class="inner-men-cart-pro">
+                            <a href="{{$url->getSingle()}}/{{$products[$i]->id}}" class="link-product-add-cart">Quick
+                                View</a>
+                        </div>
+                    </div>
+                    <span class="product-new-top">New</span>
+                </div>
+                <div class="item-info-product ">
+                    <h4><a href="{{$url->getSingle()}}/{{$products[$i]->id}}">{{$products[$i]->title}}</a></h4>
+                    <div class="info-product-price">
+                        <span class="item_price">{{$products[$i]->priceold}}</span>
+                        <del>{{$products[$i]->pricespecial}}</del>
+                    </div>
+                    <a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+                </div>
+            </div>
+    </div>
+    @endfor
+
+    @for($i=7;$i<=$n3;$i++) <div class="col-md-3 product-men yes-marg">
+        <div class="men-pro-item simpleCart_shelfItem">
+            <div class="men-thumb-item">
+                <img src={{$products[$i]->src}} alt="" class="pro-image-front">
+                <img src={{$products[$i]->src}} alt="" class="pro-image-back">
+                <div class="men-cart-pro">
+                    <div class="inner-men-cart-pro">
+                        <a href="{{$url->getSingle()}}/{{$products[$i]->id}}" class="link-product-add-cart">Quick
+                            View</a>
+                    </div>
+                </div>
+                <span class="product-new-top">New</span>
+            </div>
+            <div class="item-info-product ">
+                <h4><a href="{{$url->getSingle()}}/{{$products[$i]->id}}">{{$products[$i]->title}}</a></h4>
+                <div class="info-product-price">
+                    <span class="item_price">{{$products[$i]->priceold}}</span>
+                    <del>{{$products[$i]->pricespecial}}</del>
+                </div>
+                <a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+            </div>
+        </div>
+</div>
+@endfor
+
+
+<div class="clearfix"></div>
+</div>
+<div class="pagination-grid text-right">
+    <ul class="pagination paging">
+
+        @if($page<1 ||$page>=$max_page)
+        <script>window.location = "{{$url->getMens()}}{{$url->getClothings()."/1"}}"</script>
+        @endif
+        <li><a href="{{$page-1}}" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+        <li class="active" id="x"><a href="{{$page}}">{{$page}}<span class="sr-only">(current)</span></a></li>
+        @if($page>=$max_page)
+        <script>
+            document.getElementById("x").innerHTML = "";
+        </script>
+        @for($i=$max_page-4;$i<=$max_page-1;$i++) <li><a href="{{$i}}">{{$i}}</a></li>
+            @endfor
+            <li class="active"><a href="{{$page}}">{{$page}}<span class="sr-only">(current)</span></a></li>
+            @endif
+            @for($i=$page+1;$i<=$page+4;$i++) @if($i>$max_page)
+                @break
+                @endif
+                <li><a href="{{$i}}">{{$i}}</a></li>
+                @endfor
+                <li><a href="{{$page+1}}" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+    </ul>
+</div>
+</div>
 </div>
 <!-- //mens -->
 @endsection

@@ -10,16 +10,38 @@ class MensController extends NonAuthController
     public function __construct() {
         parent::__construct();
     }
-    public function clothing () {
+
+     public function clothing ($p) {
+
+        $count_product= MainProduct::where('category_id', '1')->count();
+        //select count(*) from main_product where category_id="1" 243
+        $page_num=ceil($count_product/11);
+        if($p>$page_num){
+            $p=$page_num;
+        }
         return $this->view("mens", [
-            'products' => MainProduct::where('category_id', '1')->take(11)->get(),
+            'products' => MainProduct::where('category_id', '1')
+            ->offset(($p-1)*11)
+            ->limit(11)
+            ->get(),
+            'max_page'=>$page_num,
+            'page'=>$p
         ]);
     }
-    public function shoe () {
+
+    public function shoe ($p) {
+        $count_product= MainProduct::where('category_id', '2')->count();
+        $page_num=ceil($count_product/11);
+        if($p>$page_num){
+            $p=$page_num;
+        }
         return $this->view("mens", [
             'products' => MainProduct::where('category_id', '2')
-        ->take(11)
-        ->get(),
+            ->offset(($p-1)*11)
+            ->limit(11)
+            ->get(),
+            'max_page'=>$page_num,
+            'page'=>$p
         ]);
     }
     public function watch () {
@@ -50,5 +72,5 @@ class MensController extends NonAuthController
         ->get(),
         ]);
     }
-    
+
 }
