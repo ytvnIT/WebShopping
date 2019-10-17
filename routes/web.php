@@ -13,21 +13,21 @@ Route::get(UrlUtil::womens(), 'Pages\\NonAuths\\WomensController@index');
 Route::get(UrlUtil::contact(), 'Pages\\NonAuths\\ContactController@index')->name("contact");
 
 Route::group(['prefix'=>UrlUtil::mens()], function(){
-    Route::get(UrlUtil::clothings().'/{p}', 'Pages\\NonAuths\\MensController@clothing')->where('p', '[0-9]+');
-    Route::get(UrlUtil::shoes().'/{p}', 'Pages\\NonAuths\\MensController@shoe')->where('p', '[0-9]+');
-    Route::get(UrlUtil::watches(), 'Pages\\NonAuths\\MensController@watch');
-    Route::get(UrlUtil::bags(), 'Pages\\NonAuths\\MensController@bag');
-    Route::get(UrlUtil::sunglasses(), 'Pages\\NonAuths\\MensController@sunglasse');
-    Route::get(UrlUtil::belts(), 'Pages\\NonAuths\\MensController@belt');
+    Route::get(UrlUtil::clothings().'/{page}', 'Pages\\NonAuths\\MensController@clothing')->where('page', '[0-9]+');
+    Route::get(UrlUtil::shoes().'/{page}', 'Pages\\NonAuths\\MensController@shoe')->where('page', '[0-9]+');
+    Route::get(UrlUtil::watches().'/{page}', 'Pages\\NonAuths\\MensController@watch');
+    Route::get(UrlUtil::bags().'/{page}', 'Pages\\NonAuths\\MensController@bag');
+    Route::get(UrlUtil::accessories().'/{page}', 'Pages\\NonAuths\\MensController@accessories');
+    Route::get(UrlUtil::belts().'/{page}', 'Pages\\NonAuths\\MensController@belt');
 
 });
     Route::group(['prefix'=>UrlUtil::womens()], function(){
-    Route::get(UrlUtil::clothings(), 'Pages\\NonAuths\\MensController@clothing')->where('p', '[0-9]+');
-    Route::get(UrlUtil::shoes(), 'Pages\\NonAuths\\MensController@shoe');
-    Route::get(UrlUtil::watches(), 'Pages\\NonAuths\\MensController@watch');
-    Route::get(UrlUtil::bags(), 'Pages\\NonAuths\\MensController@bag');
-    Route::get(UrlUtil::sunglasses(), 'Pages\\NonAuths\\MensController@sunglasse');
-    Route::get(UrlUtil::belts(), 'Pages\\NonAuths\\MensController@belt');
+    Route::get(UrlUtil::clothings().'/{page}', 'Pages\\NonAuths\\MensController@clothing')->where('p', '[0-9]+');
+    Route::get(UrlUtil::shoes().'/{page}', 'Pages\\NonAuths\\MensController@shoe');
+    Route::get(UrlUtil::watches().'/{page}', 'Pages\\NonAuths\\MensController@watch');
+    Route::get(UrlUtil::bags().'/{page}', 'Pages\\NonAuths\\MensController@bag');
+    Route::get(UrlUtil::accessories().'/{page}', 'Pages\\NonAuths\\MensController@accessories');
+    Route::get(UrlUtil::belts().'/{page}', 'Pages\\NonAuths\\MensController@belt');
 });
 
 Auth::routes();// câu lệnh sau dòng này cần phải login

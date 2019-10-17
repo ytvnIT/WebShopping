@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMainProductsTable extends Migration
+class Product extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,19 @@ class CreateMainProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('main_products', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('products', function (Blueprint $table) {
+            $table->bigIncrements('product_id');
             $table->string('title')->nullable();
-            $table->string('priceold')->nullable();
-            $table->string('pricespecial')->nullable();
-            $table->string('discountpercent')->nullable();
+            $table->bigInteger('priceold')->nullable();
+            $table->bigInteger('pricespecial')->nullable();
+            $table->tinyInteger('discountpercent')->nullable();
             $table->string('src')->nullable();
-            $table->string('category_id')->nullable();
+            $table->bigInteger('category_id')->nullable();
             $table->bigInteger('updated_by')->nullable();
             $table->bigInteger('created_by')->nullable();
             $table->timestamps();
+
+            //$table->foreign('category_id')->references('category_id')->on('categorys');
         });
     }
 
@@ -34,6 +36,6 @@ class CreateMainProductsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('main_products');
+        Schema::dropIfExists('products');
     }
 }

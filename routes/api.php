@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 Route::get("/product", "Apis\\ProductController@create");
+Route::get("/main-product/{page}", "Apis\\MainProductController@getByPage");
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();

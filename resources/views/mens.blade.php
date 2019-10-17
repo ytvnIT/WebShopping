@@ -260,7 +260,8 @@
 
             @endphp
 
-            @for($i=0;$i<=$n1;$i++) <div class="col-md-4 product-men no-pad-men">
+            @for($i=0;$i<=$n1;$i++)
+             <div class="col-md-4 product-men no-pad-men">
                 <div class="men-pro-item simpleCart_shelfItem">
                     <div class="men-thumb-item">
                         <img src={{$products[$i]->src}} alt="" class="pro-image-front">
@@ -291,7 +292,8 @@
     <div class="clearfix"></div>
     <div class="single-pro">
 
-        @for($i=3;$i<=$n2;$i++) <div class="col-md-3 product-men">
+        @for($i=3;$i<=$n2;$i++)
+         <div class="col-md-3 product-men">
             <div class="men-pro-item simpleCart_shelfItem">
                 <div class="men-thumb-item">
                     <img src={{$products[$i]->src}} alt="" class="pro-image-front">
@@ -348,23 +350,27 @@
     <ul class="pagination paging">
 
         @if($page<1 ||$page>=$max_page)
+            
         <script>window.location = "{{$url->getMens()}}{{$url->getClothings()."/1"}}"</script>
         @endif
         <li><a href="{{$page-1}}" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
         <li class="active" id="x"><a href="{{$page}}">{{$page}}<span class="sr-only">(current)</span></a></li>
-        @if($page>=$max_page)
-        <script>
-            document.getElementById("x").innerHTML = "";
-        </script>
-        @for($i=$max_page-4;$i<=$max_page-1;$i++) <li><a href="{{$i}}">{{$i}}</a></li>
-            @endfor
-            <li class="active"><a href="{{$page}}">{{$page}}<span class="sr-only">(current)</span></a></li>
+            @if($page>=$max_page)
+                <script>
+                    document.getElementById("x").innerHTML = "";
+                </script>
+                    @for($i=$max_page-4;$i<=$max_page-1;$i++) 
+                        <li><a href="{{$i}}">{{$i}}</a></li>
+                    @endfor
+                    <li class="active"><a href="{{$page}}">{{$page}}<span class="sr-only">(current)</span></a></li>
             @endif
-            @for($i=$page+1;$i<=$page+4;$i++) @if($i>$max_page)
-                @break
+
+            @for($i=$page+1;$i<=$page+4;$i++) 
+                @if($i>$max_page)
+                    @break
                 @endif
                 <li><a href="{{$i}}">{{$i}}</a></li>
-                @endfor
+            @endfor
                 <li><a href="{{$page+1}}" aria-label="Next"><span aria-hidden="true">»</span></a></li>
     </ul>
 </div>

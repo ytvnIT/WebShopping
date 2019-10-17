@@ -60,5 +60,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- login -->
 @include('partials.login', [])
 <!-- //login -->
+<script src="{{asset('js/main.js')}}"></script>
 </body>
 </html>

@@ -38,8 +38,8 @@ class UrlUtil {
     public static function bags() {
         return "/bags";
     }
-    public static function sunglasses() {
-        return "/sunglasse";
+    public static function accessories() {
+        return "/accessories";
     }
     public static function belts() {
         return "/belt";
@@ -51,12 +51,13 @@ class UrlUtil {
     public function getElectronic() {return UrlUtil :: electronic(); }
     public function getSingle() {return UrlUtil :: single(); }
     public function getWomens() {return UrlUtil :: womens(); }
+
     public function getMens() {return UrlUtil :: mens(); }
     public function getClothings() {return UrlUtil :: clothings(); }
     public function getShoes() {return UrlUtil :: shoes(); }
     public function getWatches() {return UrlUtil :: watches(); }
     public function getBags() {return UrlUtil :: bags(); }
-    public function getSunglasses() {return UrlUtil :: sunglasses(); }
+    public function getAccessories() {return UrlUtil :: accessories(); }
     public function getBelts() {return UrlUtil :: belts(); }
 
 

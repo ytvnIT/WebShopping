@@ -24,29 +24,28 @@
 									<div class="col-sm-6 multi-gd-img1 multi-gd-text ">
 
 
-										<a href="{{$url->getMens()}}"><img src="{{asset('images/woo1.jpg')}}" alt=" "/></a>
+										<a href="{{$url->getMens()}}{{$url->getClothings()."/1"}}"><img src="{{asset('images/woo1.jpg')}}" alt=" "/></a>
 
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
 											<li><a href="{{$url->getMens()}}{{$url->getClothings()."/1"}}">Clothing</a></li>
-											<li><a href="{{$url->getMens()}}">Wallets</a></li>
-											<li><a href="{{$url->getMens()}}{{$url->getShoes()."/1"}}">Footwear</a></li>
-											<li><a href="{{$url->getMens()}}{{$url->getWatches()}}">Watches</a></li>
-											<li><a href="{{$url->getMens()}}">Accessories</a></li>
-											<li><a href="{{$url->getMens()}}{{$url->getBags()}}">Bags</a></li>
-											<li><a href="{{$url->getMens()}}">Caps & Hats</a></li>
+											<li><a href="{{$url->getMens()}}{{$url->getShoes()."/1"}}">Shoes</a></li>
+											<li><a href="{{$url->getMens()}}{{$url->getWatches()."/1"}}">Watches</a></li>
+											<li><a href="{{$url->getMens()}}{{$url->getBelts()."/1"}}">Belts</a></li>
+											<li><a href="{{$url->getMens()}}{{$url->getBags()."/1"}}">Bags</a></li>
+											<li><a href="{{$url->getMens()}}{{$url->getAccessories()."/1"}}">Accessories</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="{{$url->getMens()}}{{$url->getBelts()}}">Belts</a></li>
-											<li><a href="{{$url->getMens()}}{{$url->getSunglasses()}}">Sunglasses</a></li>
-											<li><a href="{{$url->getMens()}}">Perfumes</a></li>
-											<li><a href="{{$url->getMens()}}">Beauty</a></li>
-											<li><a href="{{$url->getMens()}}">Shirts</a></li>
-											<li><a href="{{$url->getMens()}}">Sunglasses</a></li>
-											<li><a href="{{$url->getMens()}}">Swimwear</a></li>
+											<li><a href="#">Belts</a></li>
+											<li><a href="#">Sunglasses</a></li>
+											<li><a href="#">Perfumes</a></li>
+											<li><a href="#">Beauty</a></li>
+											<li><a href="#">Shirts</a></li>
+											<li><a href="#">Sunglasses</a></li>
+											<li><a href="#">Swimwear</a></li>
 										</ul>
 									</div>
 									<div class="clearfix"></div>
@@ -76,7 +75,7 @@
 											<li><a href="{{$url->getWomens()}}">Perfumes</a></li>
 											<li><a href="{{$url->getWomens()}}">Beauty</a></li>
 											<li><a href="{{$url->getWomens()}}">Shirts</a></li>
-											<li><a href="{{$url->getWomens()}}{{$url->getSunglasses()}}">Sunglasses</a></li>
+											<li><a href="{{$url->getWomens()}}{{$url->getAccessories()}}">Sunglasses</a></li>
 											<li><a href="{{$url->getWomens()}}">Swimwear</a></li>
 										</ul>
 									</div>

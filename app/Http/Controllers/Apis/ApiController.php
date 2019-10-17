@@ -34,6 +34,11 @@ abstract class ApiController extends CookieController
 
     }
 
+    public function getByPage($page) {
+        // var_dump($user);
+        return response()->json($this->model::getByPage($page));
+    }
+
 
 
     // public abstract function before_create();

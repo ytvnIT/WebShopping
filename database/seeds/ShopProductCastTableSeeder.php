@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\MainProduct;
+use App\Models\Product;
 
 class ShopProductCastTableSeeder extends Seeder
 {
@@ -12,7 +12,9 @@ class ShopProductCastTableSeeder extends Seeder
      */
     public function run()
     {
-        $json=File::get('C:\Users\Admin\Desktop\Shopping_Card\database\seeds\data_shopping.json');
+        // $json=File::get('C:\Users\Admin\Desktop\Shopping_Card\database\seeds\data_shopping.json');
+        $json=File::get('E:\Web\Crawl_Code\data_shopping_with_href2.json');
+
         $data=json_decode($json);
         $arr=[];
         foreach($data as $obj){
@@ -25,6 +27,6 @@ class ShopProductCastTableSeeder extends Seeder
                 "category_id" => $obj->category_id
             ));
         }
-        DB::table('main_products')->insert($arr);
+        DB::table('products')->insert($arr);
     }
 }
