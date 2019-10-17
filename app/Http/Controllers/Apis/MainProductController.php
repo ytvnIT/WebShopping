@@ -8,7 +8,7 @@ class MainProductController extends ApiController
 {
 
     public function __construct() {
-        $this->model = "App\Models\MainProduct";
+        $this->model = "App\Models\Product";
     }
 
     //

@@ -26,25 +26,18 @@
 						</script>
 					<!-- //FlexSlider-->
 					<ul class="slides">
-						<li data-thumb="images/d2.jpg">
-							<div class="thumb-image"> <img src="{{asset('images/d2.jpg')}}" data-imagezoom="true" class="img-responsive"> </div>
-						</li>
-						<li data-thumb="images/d1.jpg">
-							<div class="thumb-image"> <img src={{$detail[0]->src}} data-imagezoom="true" class="img-responsive"> </div>
-						</li>
-						<li data-thumb="images/d3.jpg">
-							<div class="thumb-image"> <img src="images/d3.jpg" data-imagezoom="true" class="img-responsive"> </div>
-						</li>
-						<li data-thumb="images/d4.jpg">
-							<div class="thumb-image"> <img src="images/d4.jpg" data-imagezoom="true" class="img-responsive"> </div>
-						</li>
+                        @foreach($srcs as $src)
+                        <li data-thumb="$src">
+							<div class="thumb-image"> <img src={{$src}} data-imagezoom="true" class="img-responsive"> </div>
+                        </li>
+                        @endforeach
 					</ul>
 					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-6 single-right-left simpleCart_shelfItem animated wow slideInRight animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInRight;">
-					<h3>Asics Gel Zaraca 4 Blue Sport Shoes</h3>
+					<h3>{{$details[0]}}</h3>
 					<p><span class="item_price">$550</span> <del>- $900</del></p>
 					<div class="rating1">
 						<span class="starRating">
