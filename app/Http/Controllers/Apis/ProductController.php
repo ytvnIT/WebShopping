@@ -8,6 +8,7 @@ class ProductController extends ApiController
 {
 
     public function __construct() {
+        parent::__construct();
         $this->model = "App\Models\Product";
     }
 
@@ -19,6 +20,7 @@ class ProductController extends ApiController
         $obj->title = $input['a'];
         $obj->author = "Loucias";
         return $obj;
+        // return $this->user;
     }
 
     public function index () {

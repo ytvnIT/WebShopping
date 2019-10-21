@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::post("signup",'Apis\\Authentication\\RegisterController@create');
 Route::get("/product", "Apis\\ProductController@create");
 Route::get("/main-product/{page}", "Apis\\MainProductController@getByPage");
 Route::get("/detail-product/{id}", "Apis\\DetailController@getDetail");

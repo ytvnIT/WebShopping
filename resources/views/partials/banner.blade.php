@@ -37,7 +37,7 @@
 											<li><a href="{{$url->getMens()}}{{$url->getAccessories()."/1"}}">Accessories</a></li>
 										</ul>
 									</div>
-									<div class="col-sm-3 multi-gd-img">
+									<!-- <div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
 											<li><a href="#">Belts</a></li>
 											<li><a href="#">Sunglasses</a></li>
@@ -47,7 +47,7 @@
 											<li><a href="#">Sunglasses</a></li>
 											<li><a href="#">Swimwear</a></li>
 										</ul>
-									</div>
+									</div> -->
 									<div class="clearfix"></div>
 								</div>
 							</ul>
@@ -86,8 +86,8 @@
 								</div>
 							</ul>
 					</li>
-					<li class=" menu__item"><a class="menu__link" href="{{$url->getElectronic()}}">Electronics</a></li>
-					<li class=" menu__item"><a class="menu__link" href="{{$url->getCodes()}}">Short Codes</a></li>
+					<!-- <li class=" menu__item"><a class="menu__link" href="{{$url->getElectronic()}}">Electronics</a></li>
+					<li class=" menu__item"><a class="menu__link" href="{{$url->getCodes()}}">Short Codes</a></li> -->
 					<li class=" menu__item"><a class="menu__link" href="{{$url->getContact()}}">contact</a></li>
 				  </ul>
 				</div>

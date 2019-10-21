@@ -3,6 +3,7 @@
 use App\Utils\UrlUtil;
 use App\Models\MainProduct;
 
+
 Route::get(UrlUtil::home(), 'Pages\\NonAuths\\HomeController@index');
 Route::get(UrlUtil::codes(), 'Pages\\NonAuths\CodesController@index');
 Route::get(UrlUtil::checkout(), 'Pages\\NonAuths\\CheckOutController@index');

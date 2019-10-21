@@ -7,14 +7,14 @@ class Product extends BaseModel
         parent::__construct();
 
         $this->table = "products";
-        $this->fillable = array_merge($this->fillable, array(
-            "title",
-            "priceold",
-            "pricespecial",
-            "discountpercent",
-            "src",
-            "category_id"
-        ));
+            $this->fillable = array_merge($this->fillable, array(
+                "title",
+                "priceold",
+                "pricespecial",
+                "discountpercent",
+                "src",
+                "category_id"
+            ));
     }
 
     public static function getByPage($page, $category_id) {
