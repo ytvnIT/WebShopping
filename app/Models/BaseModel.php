@@ -17,9 +17,7 @@ abstract class BaseModel extends Model
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
-    public function getfillable(){
-        return $this->fillable;
-    }
+   
     public function __construct() {
         $this->fillable = array (
             'created_at',
@@ -28,6 +26,19 @@ abstract class BaseModel extends Model
             'updated_by',
         );
     }
+    abstract protected function before_create(BaseModel &$doc);
+    abstract protected function before_update(BaseModel &$new_doc, BaseModel &$old_doc);
 
+    protected function castToModel( $model, $model_name) {
+        $data=json_decode($model[0]);
+        $doc = new $model_name ();
+        foreach ($data as $key => $value) {
+            $doc->$key = $value;
+        }
+        return $doc;
+    }
+    public function getfillable(){
+        return $this->fillable;
+    }
     
 }

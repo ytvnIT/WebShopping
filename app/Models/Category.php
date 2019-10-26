@@ -21,5 +21,12 @@ class Category extends BaseModel
             ->get(),
         ];
     }
+    public function before_create(BaseModel &$doc) {
+
+    }
+
+    public function before_update(BaseModel &$new_doc, BaseModel &$old_doc) {
+        
+    }
 }
 

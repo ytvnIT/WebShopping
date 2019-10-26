@@ -3,6 +3,21 @@
 use App\Utils\UrlUtil;
 use App\Models\MainProduct;
 
+Route::get("android/", function(){
+    return response()->json("DAI HOC CONG NGHE THONG TIN");
+});
+Route::get("android/array", function(){
+    $a=['HO', 'CHI', 'MINH'];
+    return response()->json($a);
+});
+Route::get("user", function(){
+    $arr=[];
+    $a=["username"=>"tran van nhu y", "password"=>"123"];
+    $b=["username"=>"tran van nhu y dep trai", "password"=>"333"];
+    array_push($arr,$a);
+    array_push($arr,$b);
+    return response()->json($arr);
+});
 
 Route::get(UrlUtil::home(), 'Pages\\NonAuths\\HomeController@index');
 Route::get(UrlUtil::codes(), 'Pages\\NonAuths\CodesController@index');

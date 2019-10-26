@@ -33,10 +33,10 @@
 									</div>
 									<div class="login-right">
 										<h3>Sign in with your account</h3>
-										<form method="POST" action="{{ route('login') }}">
+										<form method="POST" action="{{ route('signin') }}">
 											<div class="sign-in">
 												<h4>Email :</h4>
-												<input type="text" name="email" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
+												<input type="text" name="name" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
 											</div>
 											<div class="sign-in">
 												<h4>Password :</h4>

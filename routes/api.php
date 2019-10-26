@@ -13,7 +13,14 @@ use Illuminate\Http\Request;
 |
 */
 Route::post("signup",'Apis\\Authentication\\RegisterController@create');
-Route::get("/product", "Apis\\ProductController@create");
+
+Route::get("dangnhap",'Apis\\Authentication\\LoginController@dangnhap')->name("dangnhap");//hien trang login
+Route::post("signin",'Apis\\Authentication\\LoginController@login')->name("signin");//thuc thi xac thuc
+Route::get("/product", "Apis\\ProductController@index")->middleware("myauth");
+
+Route::get("getHeader",'Apis\\Authentication\\LoginController@getHeader');
+
+
 Route::get("/main-product/{page}", "Apis\\MainProductController@getByPage");
 Route::get("/detail-product/{id}", "Apis\\DetailController@getDetail");
 Route::middleware('auth:api')->get('/user', function (Request $request) {

@@ -32,5 +32,12 @@ class Product extends BaseModel
             'page'=>$page
         ];
     }
+    public function before_create(BaseModel &$doc) {
+
+    }
+
+    public function before_update(BaseModel &$new_doc, BaseModel &$old_doc) {
+        
+    }
 }
 

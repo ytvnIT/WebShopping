@@ -21,23 +21,22 @@ abstract class ApiController extends CookieController
 
     public abstract function cast_to_model($input);
 
+   
+
     public function create(Request $re) {
-        
-        // $obj = $this->cast_to_model(["a" => 321321321]);
-        // return ($obj);
-        // return ($this->user)   
+         
         $model = $this->model;
         $doc = new $model();   
         $arr=[];
-      
         foreach ($_POST as $key => $value) {
             if (in_array($key, $doc->getfillable() )) {
                 $doc->$key = $value;
             }
         }
+        $doc->before_create($doc);
         $doc->save();
-        array_push($arr, $doc);
-        return response()->json($arr);
+        // array_push($arr, $doc);
+        return response()->json($doc);
         
     }
     public function read() {
