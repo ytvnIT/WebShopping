@@ -12,11 +12,10 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::post("signup",'Apis\\Authentication\\RegisterController@create');
-
-Route::get("dangnhap",'Apis\\Authentication\\LoginController@dangnhap')->name("dangnhap");//hien trang login
+Route::post("signup",'Apis\\Authentication\\RegisterController@create')->name("signup");
 Route::post("signin",'Apis\\Authentication\\LoginController@login')->name("signin");//thuc thi xac thuc
-Route::get("/product", "Apis\\ProductController@index")->middleware("myauth");
+// Route::get("/product", "Apis\\ProductController@index")->middleware("myauth");
+Route::middleware('myauth:api')->get('/product', "Apis\\ProductController@index");
 
 Route::get("getHeader",'Apis\\Authentication\\LoginController@getHeader');
 

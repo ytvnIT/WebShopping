@@ -1,4 +1,5 @@
 <?php
+
 define("SECRET_KEY","secret_key");
 function base64UrlEncode(string $data): string {
     $urlSafeData = strtr(base64_encode($data), '+/', '-_');

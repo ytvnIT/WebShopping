@@ -27,22 +27,20 @@ class User extends BaseModel
         
     }
 
-    public function login($name, $password){
-        
-        $data=User::where('name',$name)->get();//sau khi select du lieu nay dang [{}] 
+    public function login($email, $password){
+     
+        $data=User::where('email',$email)->get();//sau khi select du lieu nay dang [{}] 
         $user=$this->castToModel($data, $this);//cast thanh user model
-
         if (!is_null($user)) {
             if (password_verify($password, $user->password)) {
                 return generateJWT(array(
-                    "username" => $user->name,
+                    "email" => $user->email,
                     "id" => $user->id,
             
                 ));
             }
         }
-        // return response()->json($user);
-        return "falreewsd";
+        return null;
     }
     public static function getuser() {
         return [

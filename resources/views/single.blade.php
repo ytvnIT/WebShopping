@@ -14,17 +14,6 @@
 		<div class="col-md-6 single-right-left animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">
 			<div class="grid images_3_of_2">
 				<div class="flexslider">
-					<!-- FlexSlider -->
-						<script>
-						// Can also be used with $(document).ready()
-							$(window).load(function() {
-								$('.flexslider').flexslider({
-								animation: "slide",
-								controlNav: "thumbnails"
-								});
-							});
-						</script>
-					<!-- //FlexSlider-->
 					<ul class="slides">
                         @foreach($srcs as $src)
                         <li data-thumb="$src">

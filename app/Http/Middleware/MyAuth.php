@@ -2,8 +2,9 @@
 
 namespace App\Http\Middleware;
 
+require_once(__DIR__ ."/../../libs/jwt.php");
 use Closure;
-
+session_start();
 class MyAuth
 {
     /**
@@ -14,13 +15,12 @@ class MyAuth
      * @return mixed
      */
     public function handle($request, Closure $next)
-    {
-        $headers = apache_request_headers();
-        if(array_key_exists("Authorization",$headers)){
-            list($header, $payload) = explode(" ", $headers['Authorization']);
-            if(verifyJWT($payload))
+    {     
+        // session_unset();
+        if(isset($_SESSION['token'])) {
+            if(verifyJWT($_SESSION['token']))
                 return $next($request);
-        }
-        return redirect()->route('dangnhap');          
+        } 
+        return redirect("http://localhost:8000/#open-login-modal");     
     }
 }

@@ -10,19 +10,23 @@
 								<div class="login">
 									<div class="login-bottom">
 										<h3>Sign up for free</h3>
-										<form>
-											<div class="sign-up">
+										<form method="POST" action="{{route('signup')}}">
+											<div class="sign-up" >
 												<h4>Email :</h4>
-												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
+												<input type="text" name="email" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
+											</div>
+											<div class="sign-up" >
+												<h4>Name :</h4>
+												<input type="text" name="name" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
 											</div>
 											<div class="sign-up">
 												<h4>Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+												<input type="password" name="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
 
 											</div>
 											<div class="sign-up">
 												<h4>Re-type Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+												<input type="password" name="repassword" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
 
 											</div>
 											<div class="sign-up">
@@ -36,7 +40,7 @@
 										<form method="POST" action="{{ route('signin') }}">
 											<div class="sign-in">
 												<h4>Email :</h4>
-												<input type="text" name="name" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
+												<input type="text" name="email" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
 											</div>
 											<div class="sign-in">
 												<h4>Password :</h4>
@@ -61,3 +65,16 @@
 				</div>
 			</div>
 <!-- //login -->
+<script src="{{asset('js/jquery.flexslider.js')}}"></script>
+<script>
+	$(() => {
+		console.log("ds klajdskla");
+		if (window.location.hash === "#open-login-modal") {
+			$("#myModal4").modal("show");
+		}
+		$('.flexslider').flexslider({
+			animation: "slide",
+			controlNav: "thumbnails"
+		});
+	});
+</script>

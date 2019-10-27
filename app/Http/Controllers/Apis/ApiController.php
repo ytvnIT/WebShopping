@@ -29,10 +29,13 @@ abstract class ApiController extends CookieController
         $doc = new $model();   
         $arr=[];
         foreach ($_POST as $key => $value) {
+            // echo $key . "===" . $value . "<br>";
+            
             if (in_array($key, $doc->getfillable() )) {
                 $doc->$key = $value;
             }
         }
+        // return $key;
         $doc->before_create($doc);
         $doc->save();
         // array_push($arr, $doc);

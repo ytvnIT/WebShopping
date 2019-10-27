@@ -3,6 +3,7 @@ namespace App\Http\Controllers\Apis\Authentication;
 use App\Http\Controllers\Apis\ApiController;
 use Illuminate\Http\Request;
 require_once( __DIR__ . "/../../../../libs/jwt.php");
+session_start();
 class LoginController extends ApiController
 {
     public function __construct() {
@@ -15,16 +16,20 @@ class LoginController extends ApiController
     public function login(){      
        
         $doc = new $this->model ();
-        $name="";
+        $email="";
         $password="";
-        
+        session_unset();
         if(array_key_exists("password",$_POST))
             $password=$_POST['password'];
-        if(array_key_exists("name",$_POST))
-            $name=$_POST['name'];
+        if(array_key_exists("email",$_POST))
+            $email=$_POST['email'];
+        $token=$doc->login($email, $password);
+        if($token!=null){
+            $_SESSION["token"] = $token;
+            setcookie("token", $token, time()+60);
+            return view('home');
+        }
         
-        // return ($doc->login($name, $password));
-        echo "Login success";
         
     }
 
