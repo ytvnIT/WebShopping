@@ -19,9 +19,10 @@ Route::get("user", function(){
     return response()->json($arr);
 });
 
+Route::get("checkout", 'Pages\\NonAuths\\checkout@index');
 Route::get(UrlUtil::home(), 'Pages\\NonAuths\\HomeController@index');
 Route::get(UrlUtil::codes(), 'Pages\\NonAuths\CodesController@index');
-Route::get(UrlUtil::checkout(), 'Pages\\NonAuths\\CheckOutController@index');
+// Route::get(UrlUtil::checkout(), 'Pages\\NonAuths\\CheckOutController@index');
 Route::get(UrlUtil::electronic(), 'Pages\\NonAuths\\ElectronicController@index');
 Route::get(UrlUtil::mens(), 'Pages\\NonAuths\\MensController@clothing');
 Route::get('/single/{id}', 'Pages\\NonAuths\\SingleController@index');

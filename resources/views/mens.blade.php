@@ -274,14 +274,16 @@
                         </div>
                         <span class="product-new-top">New</span>
 
+
                     </div>
                     <div class="item-info-product ">
                         <h4><a href="{{$url->getSingle()}}/{{$products[$i]->product_id}}">{{$products[$i]->title}}</a></h4>
                         <div class="info-product-price">
-                            <span class="item_price">{{$products[$i]->priceold}}</span>
-                            <del>{{$products[$i]->pricespecial}}</del>
+                            <span class="item_price price_view">{{$products[$i]->pricespecial}} &#8363;</span>
+                            <del class="price_view">{{$products[$i]->priceold}} &#8363;</del>
                         </div>
-                        <a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+                        <a href="javascript:void(0)" class="item_add addToCart single-item hvr-outline-out button2">Add to cart</a>
+                        <p style="display: none">{{$products[$i]->product_id}}</p>               
                     </div>
                 </div>
         </div>
@@ -309,10 +311,11 @@
                 <div class="item-info-product ">
                     <h4><a href="{{$url->getSingle()}}/{{$products[$i]->product_id}}">{{$products[$i]->title}}</a></h4>
                     <div class="info-product-price">
-                        <span class="item_price">{{$products[$i]->priceold}}</span>
-                        <del>{{$products[$i]->pricespecial}}</del>
+                        <span class="item_price">{{$products[$i]->pricespecial}} &#8363;</span>
+                        <del>{{$products[$i]->priceold}} &#8363;</del>
                     </div>
-                    <a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+                    <a href="javascript:void(0)" class="item_add addToCart single-item hvr-outline-out button2">Add to cart</a>
+                    <p style="display: none">{{$products[$i]->product_id}}</p> 
                 </div>
             </div>
     </div>
@@ -334,10 +337,11 @@
             <div class="item-info-product ">
                 <h4><a href="{{$url->getSingle()}}/{{$products[$i]->product_id}}">{{$products[$i]->title}}</a></h4>
                 <div class="info-product-price">
-                    <span class="item_price">{{$products[$i]->priceold}}</span>
-                    <del>{{$products[$i]->pricespecial}}</del>
+                    <span class="item_price">{{$products[$i]->pricespecial}} &#8363;</span>
+                    <del>{{$products[$i]->priceold}}</del>
                 </div>
-                <a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+                <a href="javascript:void(0)" class="item_add addToCart single-item hvr-outline-out button2">Add to cart</a>
+                <p style="display: none">{{$products[$i]->product_id}}</p> 
             </div>
         </div>
 </div>
@@ -377,4 +381,46 @@
 </div>
 </div>
 <!-- //mens -->
+<script>
+$(() => {
+   
+    function format_price_view(){
+        var  price = $(".price_view").text();
+        console.log(price);
+        // price = format_price(price);
+
+        // $(".price_view").text()
+    }
+
+    $(".addToCart").click(function(){
+        var arr=[];
+        var id=Number($(this).next().text());
+        var price=$(this).prev().find("span").text();
+        price=Number(price.slice(0, price.length-2));
+        var title=$(this).prev().prev().text();
+        var src=$(this).parent().prev().find("img").attr("src");     
+        if(localStorage.getItem("cart")==null)
+            arr.push({"id":id, "quantity":1, "price": price, "title": title, "src":src});         
+        else{
+            arr=JSON.parse(localStorage.getItem("cart"));          
+            // localStorage.removeItem("cart");
+            var flag=0;
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]['id']!=id)
+                    continue;
+                arr[i]['quantity']+=1;
+                flag=1;
+                break;       
+            }                   
+            if(flag==0)
+            arr.push({"id":id, "quantity":1, "price": price, "title": title, "src":src});   
+        }
+        localStorage.setItem("cart", JSON.stringify(arr));      
+        display_total();
+       
+    });
+    format_price_view();
+});
+
+</script>
 @endsection

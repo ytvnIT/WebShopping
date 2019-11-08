@@ -2,6 +2,7 @@
 namespace App\Http\Controllers\Apis\Authentication;
 use App\Http\Controllers\Apis\ApiController;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 require_once( __DIR__ . "/../../../../libs/jwt.php");
 session_start();
 class LoginController extends ApiController
@@ -10,27 +11,34 @@ class LoginController extends ApiController
         $this->model = "App\Models\User";
     }
 
+
     public function dangnhap(){
         return view('partials.signin'); 
     }
     public function login(){      
-       
         $doc = new $this->model ();
         $email="";
         $password="";
-        session_unset();
+      
         if(array_key_exists("password",$_POST))
             $password=$_POST['password'];
         if(array_key_exists("email",$_POST))
             $email=$_POST['email'];
+            
         $token=$doc->login($email, $password);
+        
         if($token!=null){
-            $_SESSION["token"] = $token;
-            setcookie("token", $token, time()+60);
+            // $_SESSION["token"] = $token;
+            setcookie("token", $token, time()+600000000);
+            // setCookie($token);
             return view('home');
         }
-        
-        
+    }
+
+    public function setCookie($token){
+        $reponse=new Response;
+        $reponse->withCookie("token2", $token, 10);
+        return $reponse;
     }
 
     public function getHeader(){

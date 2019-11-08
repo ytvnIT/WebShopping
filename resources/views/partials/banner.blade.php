@@ -99,11 +99,11 @@
 						<a href="{{$url->getCheckOut()}}">
 							<h3> <div class="total">
 								<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
-								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
+								<span class="simpleCartTotal"></span> (<span id="simpleCartQuantity" class="simpleCartQuantity"></span>)</div>
 
 							</h3>
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+						<p><a href="javascript:;" class="simpleCart_empty empty_cart">Empty Cart</a></p>
 
 			</div>
 		</div>
@@ -113,5 +113,56 @@
 <!-- //banner-top -->
 <!-- banner -->
 
+<script>
+	function display_total(){
+		var items=JSON.parse(localStorage.getItem("cart")); 
+		if(items==null){
+			$(".simpleCartTotal").text("0.00 đ");
+			$(".simpleCartQuantity").text("0 items");	
+			return ;
+		}
+		var total=0;
+		var quantity=0;
+		items.forEach(function(element){
+			total+=Number(element.price)*Number(element.quantity);
+			quantity += Number(element.quantity);
+		});
+		$(".simpleCartTotal").text(format_price(String(total)) + " đ");
+		$(".simpleCartQuantity").text(quantity + " items");
+		
+	}
+
+	function format_price(price){
+			u=0;
+			n=price.length;
+			for(var i=price.length-1; u<n; i--){
+				u++;
+				if(u%3==0){
+					if(i==0)
+						break ;
+				price=price.slice(0, i).concat("."+price.slice(i, price.length));				
+				}
+			}
+			return price;
+	}
+
+	function deformat_price(price){
+		var result = price.split(".");
+		var re="";
+		result.forEach(function(element){
+			re+=element;
+		});
+		return re;
+	}
+	$(document).ready(function(){	
+		$(".empty_cart").click(function(){
+			localStorage.removeItem("cart");
+			$(".simpleCartTotal").text("0.00 đ");
+			$(".simpleCartQuantity").text("0 items");	
+		});
+		display_total();
+		
+	});
+</script>
 
 <!-- //banner -->

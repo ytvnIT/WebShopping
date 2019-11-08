@@ -15,7 +15,11 @@ use Illuminate\Http\Request;
 Route::post("signup",'Apis\\Authentication\\RegisterController@create')->name("signup");
 Route::post("signin",'Apis\\Authentication\\LoginController@login')->name("signin");//thuc thi xac thuc
 // Route::get("/product", "Apis\\ProductController@index")->middleware("myauth");
+
 Route::middleware('myauth:api')->get('/product', "Apis\\ProductController@index");
+
+Route::post("reset",'Apis\\Authentication\\ResetPasswordController@sendToken')->name("reset");
+Route::post("changepassword",'Apis\\Authentication\\ResetPasswordController@changePassword')->name("changepassword");
 
 Route::get("getHeader",'Apis\\Authentication\\LoginController@getHeader');
 

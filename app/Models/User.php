@@ -28,7 +28,7 @@ class User extends BaseModel
     }
 
     public function login($email, $password){
-     
+        
         $data=User::where('email',$email)->get();//sau khi select du lieu nay dang [{}] 
         $user=$this->castToModel($data, $this);//cast thanh user model
         if (!is_null($user)) {
@@ -47,5 +47,29 @@ class User extends BaseModel
             'detail' => User::find(1)
         ];
     }
-    
+    public static function isExistEmail($email){
+        return User::select("email")->where("email", $email)->first();
+    }
+
+    public static function setPassword($email, $password, $token){
+        $self = new static;
+        $password= password_hash($password, PASSWORD_BCRYPT, $self->options);
+        $token2 = PasswordReset::select('token')->where('email', $email )->first();
+        PasswordReset::where("email", $email)->delete();
+      
+        if($token2==null)
+            return 0;
+        
+        if (!password_verify($token, $token2->token)){
+            return 0;
+        }
+        try {
+            $result = User::where('email' , $email)->update(['password' => $password]);
+            return $result;
+
+        } 
+        catch (Illuminate\Database\QueryException  $ex) {
+            dd($ex->getMessage()); 
+        }        
+    }
 }

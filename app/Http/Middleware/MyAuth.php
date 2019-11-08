@@ -17,8 +17,8 @@ class MyAuth
     public function handle($request, Closure $next)
     {     
         // session_unset();
-        if(isset($_SESSION['token'])) {
-            if(verifyJWT($_SESSION['token']))
+        if(isset($_COOKIE['token'])) {
+            if(verifyJWT($_COOKIE['token']))
                 return $next($request);
         } 
         return redirect("http://localhost:8000/#open-login-modal");     

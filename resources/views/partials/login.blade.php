@@ -45,7 +45,7 @@
 											<div class="sign-in">
 												<h4>Password :</h4>
 												<input type="password" name="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-												<a href="#">Forgot password?</a>
+												<a href="http://localhost:8000/#open-forgotpassword-modal">Forgot password?</a>
 											</div>
 											<div class="single-bottom">
 												<input type="checkbox"  id="brand" value="">
@@ -68,7 +68,7 @@
 <script src="{{asset('js/jquery.flexslider.js')}}"></script>
 <script>
 	$(() => {
-		console.log("ds klajdskla");
+		
 		if (window.location.hash === "#open-login-modal") {
 			$("#myModal4").modal("show");
 		}

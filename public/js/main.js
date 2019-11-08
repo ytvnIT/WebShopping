@@ -6,6 +6,7 @@
         // Product detail JS
     }
 
+    
 
     function html(element) {
         return `
@@ -33,11 +34,14 @@
         </div>
         `
     }
+  
+    
+
     $.ajax({
         url: "http://localhost:8000/api/main-product/1",
         method: "GET",
         success: function (obj) {
-            console.log(obj);
+            // console.log(obj);
             obj.products.forEach(element => {
                 $(".tab-1").append(html(element));
             });
